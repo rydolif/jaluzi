@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>РОЛЬШТОРЫ И ЖАЛЮЗИ ВСЕХ ВИДОВ</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div>
+
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__container">
+		
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="logo">
+						<span>JALUZI5</span>
+					</a>
+
+					<p>Производим , продаем и устанавливаем <br>рольшторы и жалюзи в Минске</p>
+				</div>
+
+				<a href="#" class="header__call order_open"> <span><svg><use xlink:href="#telephone"></use></svg></span>Заказать  звонок</a>
+
+				<div class="header__info">
+					<p>с 9:00 до 21:00 ежедневно</p>
+					<a href="+375293322943">+375 (29) 332 29 43</a>
+					<a href="+375333522943">+375 (33) 352 29 43</a>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="header--section section" id="header--section">
+			<div class="container">
+
+				<h1>
+					<img src="img/h1.png" alt="">
+					<b>РОЛЬШТОРЫ И ЖАЛЮЗИ</b> <br>ВСЕХ ВИДОВ
+					<span>от <b>29</b> руб/изд</span>
+				</h1>
+
+				<p>
+					Пока другие компании переходят 
+					<br> на дешевые китайские ткани и комплектующие,
+					<br> мы <b>гарантируем лучшие</b> в Минске <b>цены</b>
+					<br> на европейские материалы
+				</p>
+
+				<div class="header--section__block">
+					<a href="#plus" class="header--section__link-bottom">узнать подробнее <span></span></a>
+
+					<div class="header--section__form">
+
+						<span class="header__arrow"></span>
+
+						<h3>Рассчитайте цену<br> за 5 минут <img src="img/header-form.png" alt=""></h3>
+						<p>Назовем честную цену по телефону, которая <br>не поменяется при замере</p>
+
+						<form action="sendmail.php" class="form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div>
+								<select name="type">
+									<option disabled selected >выберите тип изделия</option>
+									<option>Пункт 1</option>
+									<option>Пункт 2</option>
+								</select>
+							</div>
+							<div class="form__line">
+								<div><input type="number" name="height" placeholder="высота" required></div>
+								<div><input type="number" name="widht" placeholder="ширина" required></div>
+							</div>
+							<div class="form__line">
+								<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							</div>
+							<div><button type="submit" class="btn footer__form_btn" name="submit">рассчитать цену</button></div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="plus section" id="plus">
+			<div class="container">
+				
+				<div class="plus__list">
+					<div class="plus__item">
+						<svg><use xlink:href="#repair-tools"></use></svg>
+						<p>Собственное <br>производство</p>
+					</div>
+					<div class="plus__item">
+						<svg><use xlink:href="#measure"></use></svg>
+						<p>Замер, доставка <br>и монтаж <br>бессплаьно</p>
+					</div>
+					<div class="plus__item">
+						<svg><use xlink:href="#guarantee"></use></svg>
+						<p>Пожизненная <br> гарантия <br>на монтаж</p>
+					</div>
+					<div class="plus__item">
+						<svg><use xlink:href="#certificate"></use></svg>
+						<p>3 года гарантии  <br>на материалы</p>
+					</div>
+					<div class="plus__item">
+						<svg><use xlink:href="#discount"></use></svg>
+						<p>скидки на <br> обьемы</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="filter section">
+			<div class="container">
+
+				<h2><img src="img/logo.png" alt="logo"> Производим рольшторы и жалюзи всех видов</h2>
+				
+				<div class="filter__nav">
+					<span>Тип <br>изделия</span>
+					<div id="filters" class="button-group">  
+						<button class="button btn is-checked" data-filter="*">Все</button>
+						<button class="button btn" data-filter=".metal">Рольшторы</button>
+						<button class="button btn" data-filter=".transition">Рулонные шторы</button>
+						<button class="button btn" data-filter=".alkali">Горизонтальные жалюзи</button>
+						<button class="button btn" data-filter=":not(.transition)">Вертикальные жалюзи</button>
+						<button class="button btn" data-filter=".metal:not(.transition)">Плиссе</button>
+						<button class="button btn" data-filter="numberGreaterThan50">Горизонтальные жалюзи</button>
+						<button class="button btn" data-filter="ium">Пластиковые жалюзи</button>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="element-item transition metal" data-category="transition">
+						<img src="img/filter-1.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+					<div class="element-item metalloid" data-category="metalloid">
+						<img src="img/filter-2.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+					<div class="element-item post-transition metal" data-category="post-transition">
+						<img src="img/filter-3.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+					<div class="element-item post-transition metal" data-category="post-transition">
+						<img src="img/filter-4.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+					<div class="element-item transition metal" data-category="transition">
+						<img src="img/filter-5.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+					<div class="element-item alkali metal" data-category="alkali">
+						<img src="img/filter-6.jpg" alt="">
+						<p class="element-item__text">
+							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
+						</p>
+						<div class="element-item__info">
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+							<p class="element-item__info_item">
+								<b>400</b>
+								<br>вариантов
+								<br>тканей
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+
+		<section class="calculation section">
+			<div class="container">
+				
+				<h2><img src="img/logo.png" alt="logo"> Рассчитайте стоимость на сайте и <b> <br>получите скидку от 5 до 15%</b> от суммы</h2>
+
+				<p class="calculation__text"> Выберите тип изделия <span></span></p>
+
+				<form action="sendmail.php" class="" method="post">
+					<input type="hidden" name="subject" value="Форма калькулятора скидки">
+
+
+						<div class="calculation__container">
+
+							<img src="img/production-left.png" alt="" class="calculation__bg-left">
+							<img src="img/production-right.png" alt="" class="calculation__bg-right">
+
+							<div class="calculation__content">
+								<h3>Честная скидка!</h3>
+								<p>
+									Вы поможете нам сэкономить бюджет на
+									<br>привлечение клиентов,мы сделаем вам
+									<br>за это реальную скидку от стоимости!
+								</p>
+								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+								<span class="calculation__number">5%</span>
+							</div>
+							<div class="calculation__list">
+
+								<label class="calculation__item">
+									<p>рулонные шторы</p>
+									<div class="calculation__item_img">
+										<img src="img/calculation1.jpg" alt="">
+									</div>
+									<input type="checkbox" name="" class="answer" value="рулонные шторы" id="tkan">
+								</label>
+
+								<label class="calculation__item ">
+									<p>горизонтальные жалюзи</p>
+									<div class="calculation__item_img">
+										<img src="img/calculation2.jpg" alt="">
+									</div>
+									<input type="checkbox" name="" class="answer" value="горизонтальные жалюзи" id="tkan">
+								</label>
+
+								<label class="calculation__item ">
+									<p>плиссе</p>
+									<div class="calculation__item_img">
+										<img src="img/calculation3.jpg" alt="">
+									</div>
+									<input type="checkbox" name="" class="answer" value="плиссе" id="tkan">
+								</label>
+
+								<label class="calculation__item ">
+									<p>вертикальные жалюзи</p>
+									<div class="calculation__item_img">
+										<img src="img/calculation4.jpg" alt="">
+									</div>
+									<input type="checkbox" name="" class="answer" value="вертикальные жалюзи" id="tkan">
+								</label>
+
+
+							</div>
+						</div>
+
+					</div>
+				</form>
+
+			</div>
+		</section>
+
+		<section class="quality section">
+			<div class="container">
+				
+				<h2><img src="img/logo.png" alt="logo"> Качество - наше главное преимущество!</h2>
+				<p class="quality__sub-title">Ключевые особенности нашей работы <br>или почему мы <b>даем пожизненную гарантию</b> на монтаж и <b>3 года расширенной гарантии</b> на материалы</p>
+
+				<div class="quality-for slider-for">
+					<div class="slider-for__item">
+						<img src="img/quality-slide.jpg" alt="" class="quality__img">
+						<div class="quality__content">
+							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
+							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+							<h3>Наш выбор - качество.</h3>
+						</div>
+					</div>
+					<div class="slider-for__item">
+						<img src="img/filter-1.jpg" alt="" class="quality__img">
+						<div class="quality__content">
+							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
+							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+							<h3>Наш выбор - качество.</h3>
+						</div>
+					</div>
+					<div class="slider-for__item">
+						<img src="img/filter-3.jpg" alt="" class="quality__img">
+						<div class="quality__content">
+							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
+							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+							<h3>Наш выбор - качество.</h3>
+						</div>
+					</div>
+					<div class="slider-for__item">
+						<img src="img/filter-4.jpg" alt="" class="quality__img">
+						<div class="quality__content">
+							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
+							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+							<h3>Наш выбор - качество.</h3>
+						</div>
+					</div>
+					<div class="slider-for__item">
+						<img src="img/filter-5.jpg" alt="" class="quality__img">
+						<div class="quality__content">
+							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
+							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+							<h3>Наш выбор - качество.</h3>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="quality-nav slider-nav">
+					<div>Монтажники</div>
+					<div>Интструмент</div> 
+					<div>Производство</div>
+					<div>Материалы</div>
+					<div>Комплектующие</div>
+					<div></div>
+				</div>
+	
+			</div>
+		</section>
+
+		<section class="reviews section">
+			<div class="container">
+				
+				<h2><img src="img/logo.png" alt="logo"> Отзывы наших клиентов</h2>
+
+				<img src="img/reviews-bg.png" alt="" class="reviews__bg">
+				<img src="img/production-left.png" alt="" class="reviews__bg reviews__bg--left">
+
+				<div class="reviews-for slider-for">
+					<div class="slider-for__item">
+						<div class="reviews__block">
+							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
+							<div class="reviews__content">
+								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
+								<h3>Иван Иванов</h3>
+							</div>
+						</div>
+						<img src="img/reviews-slide.jpg" alt="">
+					</div>
+					<div class="slider-for__item">
+						<div class="reviews__block">
+							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
+							<div class="reviews__content">
+								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
+								<h3>Иван Иванов</h3>
+							</div>
+						</div>
+						<img src="img/reviews-slide.jpg" alt="">
+					</div>
+					<div class="slider-for__item">
+						<div class="reviews__block">
+							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
+							<div class="reviews__content">
+								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
+								<h3>Иван Иванов</h3>
+							</div>
+						</div>
+						<img src="img/quality-slide.jpg" alt="">
+					</div>
+					<div class="slider-for__item">
+						<div class="reviews__block">
+							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
+							<div class="reviews__content">
+								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
+								<h3>Иван Иванов</h3>
+							</div>
+						</div>
+						<img src="img/quality-slide.jpg" alt="">
+					</div>
+					<div class="slider-for__item">
+						<div class="reviews__block">
+							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
+							<div class="reviews__content">
+								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
+								<h3>Иван Иванов</h3>
+							</div>
+						</div>
+						<img src="img/reviews-slide.jpg" alt="">
+					</div>
+				</div>
+
+
+				<div class="reviews-nav slider-nav">
+					<div>01</div>
+					<div>02</div>
+					<div>03</div>
+					<div>04</div>
+					<div>05</div>
+					<div></div>
+				</div>
+	
+			</div>
+		</section>
+
+		<section class="measurements section">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-5">
+						<img src="img/measurements-bg.png" alt="" class="measurements__bg">
+						<img src="img/measurements-points.png" alt="" class="measurements__points">
+					</div>
+
+					<div class="col-lg-7">
+						<h2><img src="img/logo.png" alt="logo"> Пригласите специалиста на замер</h2>
+						<div class="measurements__content">
+							<p>Оставьте заявку и наш специалист приедет к вам на объект в удобное для вас время, привезет с собой каталоги и образцы материалов и предложит заключить договор на наилучших условиях.</p>
+							<p>Стоимость вам изначально назовут по телефону и при замере она ни на рубль не изменится.</p>
+						</div>
+						<form action="sendmail.php" class="measurements__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Введите Телефон" required></div>
+								<button type="submit" class="btn footer__form_btn" name="submit">Пригласить замерщика</button>
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="production section">
+			<div class="container">
+
+				<img src="img/production-left.png" alt="" class="production__left">
+				<img src="img/production-right.png" alt="" class="production__right">
+
+				<h2><img src="img/logo.png" alt="logo"> Фото с производства</h2>
+				<p class="production__sub-title">Мы предлагаем только продукцию высшего качества, ведь у нас работает высококвалифицированный и ответственный персоналt.</p>
+
+				<div class="production-for slider-for">
+					<div class="slider-for">
+						<img src="img/production1.jpg" alt="">
+					</div>
+					<div class="slider-for">
+						<img src="img/production2.jpg" alt="">
+					</div>
+					<div class="slider-for">
+						<img src="img/production3.jpg" alt="">
+					</div>
+					<div class="slider-for">
+						<img src="img/production1.jpg" alt="">
+					</div>
+					<div class="slider-for">
+						<img src="img/production2.jpg" alt="">
+					</div>
+					<div class="slider-for">
+						<img src="img/production3.jpg" alt="">
+					</div>
+				</div>
+
+
+				<div class="production-nav slider-nav">
+					<div>01</div>
+					<div>02</div>
+					<div>03</div>
+					<div>04</div>
+					<div>05</div>
+					<div>06</div>
+				</div>
+	
+			</div>
+		</section>
+
+		<section class="question section">
+			<div class="container">
+
+				<h2><img src="img/logo.png" alt="logo"> Остались вопросы?</h2>
+				<p class="question__sub-title">Свяжитесь с нами любым удобным способом и не забудьте упомянуть, что Вы с сайта.  За это вы <b>получите скидку от 5 до 15%</b></p>
+
+				<div class="question__block">
+
+					<div class="question__list">
+						<div class="question__item">
+							<svg><use xlink:href="#house"></use></svg>
+							<p>г. Минск, ул. Плеханова, д.56к.2, к. 19</p>
+						</div>
+						<div class="question__item">
+							<svg><use xlink:href="#telephone"></use></svg>
+							<a href="tel:+375293322943">+375 (29) 332 29 43</a>
+							<a href="tel:+375335222943">+375 (33) 352 29 43</a>
+							<a href="tel:+375173010667">+375 17 301-06-67</a>
+							<a href="viber://add?number=375295691865"><b>Viber</b>+375 29 569-18-65 </a>
+						</div>
+						<div class="question__item">
+							<svg><use xlink:href="#arroba"></use></svg>
+							<a href="mailto:info@jaluzi5.by">info@jaluzi5.by</a>
+							<a href="#" class="btn order_open">напишите нам</a>
+						</div>
+					</div>
+
+					<div class="question__map" id="map"></div>
+				</div>
+				
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="logo">
+						<span>JALUZI5</span>
+					</a>
+
+					<p>Производим , продаем и устанавливаем <br>рольшторы и жалюзи в Минске</p>
+				</div>
+
+				<a href="#" class="header__call order_open"> <span><svg><use xlink:href="#telephone"></use></svg></span>Заказать  звонок</a>
+
+				<div class="header__info">
+					<p>с 9:00 до 21:00 ежедневно</p>
+					<a href=" +375293322943">+375 (29) 332 29 43</a>
+					<a href="+375333522943">+375 (33) 352 29 43</a>
+				</div>
+			</div>
+
+			<div class="footer__line">
+				<div class="footer__copy">
+					2018 JALUZI5    All Rigfts reserved
+				</div>
+				<a href="#header" class="footer__up"><span></span></a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 	modal -->
+	<div class="modal" id="order">
+		<div class="wrapper">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close order_close" type="button"></button>
+
+				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+				<input type="hidden" name="subject" value="Узнать подробнее!">
+				<div class="form__line"><input type="text" name="name" placeholder="Введите Имя" required></div>
+				<div class="form__line"><input type="tel" name="phone" required placeholder="Введите Телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+				<div><button type="submit" class="btn form__btn" name="submit" value="отправить">Отправить</button></div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="modal" id="thanks">
+		<button class="close thanks_close" type="button"></button>
+
+		<h3>Спасибо <br>за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+	<!-- 	modal end-->
+
+
+	<script>
+      function initMap() {
+        var uluru = {lat: 53.8641293, lng: 27.5933674};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru,
+          styles: [
+		    {
+		        "featureType": "administrative",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": "-100"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.province",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "landscape",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": -100
+		            },
+		            {
+		                "lightness": 65
+		            },
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "poi",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": -100
+		            },
+		            {
+		                "lightness": "50"
+		            },
+		            {
+		                "visibility": "simplified"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": "-100"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.highway",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "simplified"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "lightness": "30"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.local",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "lightness": "40"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "transit",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": -100
+		            },
+		            {
+		                "visibility": "simplified"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "geometry",
+		        "stylers": [
+		            {
+		                "hue": "#ffff00"
+		            },
+		            {
+		                "lightness": -25
+		            },
+		            {
+		                "saturation": -97
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "labels",
+		        "stylers": [
+		            {
+		                "lightness": -25
+		            },
+		            {
+		                "saturation": -100
+		            }
+		        ]
+		    }
+		]
+
+        });
+
+
+          var marker = new google.maps.Marker({
+            position: {lat: 53.8641293, lng: 27.5933674},
+            map: map,
+            icon: 'img/map.png'
+          });
+
+          var infowindow = new google.maps.InfoWindow({
+                content: contentString
+              });
+
+              infowindow.open(map, marker);
+
+          }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

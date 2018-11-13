@@ -1,0 +1,93 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'Futura', sans-serif
+// $fw: 'Font Awesome 5 Brands', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #fdaa22
+$text: #000
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 360px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.75
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+
+	
+h1, h2, h3, h4, h5, h6
+	position: relative
+	line-height: 1.4
+	margin: 0
+	padding: 0
+	
+
+h2
+	font-weight: 600
+	font-size: 36px
+	padding-left: 35px
+	letter-spacing: .5px
+
+
+	img
+		position: absolute
+		top: 10px
+		left: 0
+
+
+	b
+		color: $accent
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+b, strong
+	font-weight: 600
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+	transition: all .3s ease
+	color: $text
+
+a:focus,
+a:hover
+	color: $accent
+
+@import "_base/preloader"
+@import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"
