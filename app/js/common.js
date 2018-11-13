@@ -1,27 +1,58 @@
 $(function() {
 
+//--------------------calculation-tab---------------------------
+  $('.services-tabs').tabslet({
+    animation: true,
+    controls: {
+      prev: '.services-tabs__prev',
+      next: '.services-tabs__next'
+    }
+  });
+
+
+  $('.team-tabs').tabslet({
+    animation: true,
+  });
+
+  function serviceCount() {
+
+    var count = $('.services-tabs .tabs-list li').length;
+    var current = $('.services-tabs .tabs-list li.active').index() + 1;
+
+    $('.count').text(count);
+    // $('.current').text(current);
+
+  }
+  
+  serviceCount();
+
+  $('.services-tabs__prev').click(function(event) {
+    serviceCount();
+  });
+
+  $('.services-tabs__next').click(function(event) {
+    serviceCount();
+  });
 
 //--------------------calculation----------------------------
-    
+  // $(".answer").each(function(index, el) {
+  //   $(el).addClass('answer-' + index);
 
-  $(".answer").each(function(index, el) {
-    $(el).addClass('answer-' + index);
+  //   // $('.answer-' + index).on('change', function() {
+  //   //     var btn = $('.btn');
 
-    $('.answer-' + index).on('change', function() {
-        var btn = $('.btn');
+  //   //     if ( btn.attr('disabled') ){
+  //   //       btn.removeAttr("disabled");
+  //   //       $('label').removeClass('calculation__item--active');
+  //   //     }
+  //   //     else{
+  //   //       btn.attr("disabled", true);
+  //   //       $('label').addClass('calculation__item--active');
+  //   //     }
 
-        if ( btn.attr('disabled') ){
-          btn.removeAttr("disabled");
-          $('.calculation__item').removeClass('calculation__item--active');
-        }
-        else{
-          btn.attr("disabled", true);
-          $('.calculation__item').addClass('calculation__item--active');
-        }
+  //   // });
 
-    });
-
-  });
+  // });
 
 //-------------------------скорость якоря перший екран---------------------------------------
   $(".header--section__block").on("click","a", function (event) {
@@ -73,8 +104,6 @@ $(function() {
     ]
   });
 
-
-
 //-------------------------------слайдер reviews---------------------------------------
   $('.reviews-for').slick({
     slidesToShow: 1,
@@ -100,7 +129,6 @@ $(function() {
       }
     ]
   });
-
 
 //-------------------------------слайдер production---------------------------------------
   $('.production-for').slick({
@@ -142,8 +170,6 @@ $(function() {
       }
     ]
   });
-
-
 
 //-------------------------------isotope---------------------------------------
 	var $grid = $('.grid').isotope({

@@ -1,5 +1,15 @@
 
 @media only screen and (max-width : 1200px)
+	
+	.calculation
+
+		&__container
+			padding-bottom: 60px
+
+		&__item
+			width: 50%
+			height: 300px
+
 
 	h1
 		width: 100%
@@ -42,6 +52,16 @@
 		
 
 @media only screen and (max-width : 992px)
+	
+	.calculation
+		&__content
+			p
+				br
+					display: none
+		&__number
+			font-size: 50px
+			right: 30px
+
 	.plus
 		svg
 			margin-bottom: 20px
@@ -133,6 +153,41 @@
 
 
 @media only screen and (max-width : 767px)
+
+	.calculation
+		overflow: hidden
+
+		&__bg-left
+			display: none
+
+		&__bg-right
+			display: none
+
+		p
+			margin-bottom: 30px
+
+		.services-tab
+			flex-direction: column
+
+		h2
+			br
+				display: none
+
+		&__content
+			width: 100%
+			margin-bottom: 30px
+
+		&__list
+			width: 100%
+
+		.tabs-list
+			width: 100%
+
+		&__form
+			width: 70%
+			min-height: auto
+			padding-top: 30px
+
 	h1
 		font-size: 36px
 		padding-left: 0
@@ -142,6 +197,9 @@
 
 		span
 			font-size: 26px
+
+	h2
+		line-height: 1.2
 
 	.header
 
@@ -218,6 +276,23 @@
 		display: none
 
 @media only screen and (max-width : 480px)
+
+	.calculation
+
+		&__item
+			max-height: 200px
+
+			span
+				padding: 10px 15px
+			&_img
+				max-width: 70px
+
+		.tabs-list
+			flex-wrap: wrap
+
+			a
+				margin-right: 10px
+
 
 	h2
 		font-size: 24px

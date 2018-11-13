@@ -296,17 +296,17 @@
 				
 				<h2><img src="img/logo.png" alt="logo"> Рассчитайте стоимость на сайте и <b> <br>получите скидку от 5 до 15%</b> от суммы</h2>
 
-				<p class="calculation__text"> Выберите тип изделия <span></span></p>
+				<p class="calculation__text">Выберите тип изделия <span></span></p>
 
-				<form action="sendmail.php" class="" method="post">
+				<form action="sendmail.php" class="form" method="post">
 					<input type="hidden" name="subject" value="Форма калькулятора скидки">
 
+					<div class="services-tabs calculation__container">
+						
+						<img src="img/production-left.png" alt="" class="calculation__bg-left">
+						<img src="img/production-right.png" alt="" class="calculation__bg-right">
 
-						<div class="calculation__container">
-
-							<img src="img/production-left.png" alt="" class="calculation__bg-left">
-							<img src="img/production-right.png" alt="" class="calculation__bg-right">
-
+						<div id="services-tab-1" class="services-tab">
 							<div class="calculation__content">
 								<h3>Честная скидка!</h3>
 								<p>
@@ -317,44 +317,181 @@
 								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
 								<span class="calculation__number">5%</span>
 							</div>
+
 							<div class="calculation__list">
 
-								<label class="calculation__item">
-									<p>рулонные шторы</p>
-									<div class="calculation__item_img">
-										<img src="img/calculation1.jpg" alt="">
-									</div>
-									<input type="checkbox" name="" class="answer" value="рулонные шторы" id="tkan">
-								</label>
+								<div class="calculation__item">
+									<input type="checkbox" name="one" class="answer" value="рулонные шторы" id="one">
+									<label for="one" class="calculation__item_label">
+										<span>рулонные шторы</span>
+										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
 
-								<label class="calculation__item ">
-									<p>горизонтальные жалюзи</p>
-									<div class="calculation__item_img">
-										<img src="img/calculation2.jpg" alt="">
-									</div>
-									<input type="checkbox" name="" class="answer" value="горизонтальные жалюзи" id="tkan">
-								</label>
+								<div class="calculation__item">
+									<input type="checkbox" name="two" class="answer" value="горизонтальные жалюзи" id="two">
+									<label for="two" class="calculation__item_label">
+										<span>горизонтальные жалюзи</span>
+										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
 
-								<label class="calculation__item ">
-									<p>плиссе</p>
-									<div class="calculation__item_img">
-										<img src="img/calculation3.jpg" alt="">
-									</div>
-									<input type="checkbox" name="" class="answer" value="плиссе" id="tkan">
-								</label>
+								<div class="calculation__item">
+									<input type="checkbox" name="three" class="answer" value="плиссе" id="three">
+									<label for="three" class="calculation__item_label">
+										<span>плиссе</span>
+										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
 
-								<label class="calculation__item ">
-									<p>вертикальные жалюзи</p>
-									<div class="calculation__item_img">
-										<img src="img/calculation4.jpg" alt="">
-									</div>
-									<input type="checkbox" name="" class="answer" value="вертикальные жалюзи" id="tkan">
-								</label>
+								<div class="calculation__item">
+									<input type="checkbox" name="four" class="answer" value="вертикальные жалюзи" id="four">
+									<label for="four" class="calculation__item_label">
+										<span>вертикальные жалюзи</span>
+										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+							</div>
+						</div>
 
+						<div id="services-tab-2" class="services-tab">
+							<div class="calculation__content">
+								<h3>Честная скидка!</h3>
+								<p>
+									Вы поможете нам сэкономить бюджет на
+									<br>привлечение клиентов,мы сделаем вам
+									<br>за это реальную скидку от стоимости!
+								</p>
+								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+								<span class="calculation__number">10%</span>
+							</div>
+
+							<div class="calculation__list">
+
+								<div class="calculation__item">
+									<input type="checkbox" name="one-2" class="answer" value="рулонные шторы" id="one-2">
+									<label for="one-2" class="calculation__item_label">
+										<span>рулонные шторы</span>
+										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="two-2" class="answer" value="горизонтальные жалюзи" id="two-2">
+									<label for="two-2" class="calculation__item_label">
+										<span>горизонтальные жалюзи</span>
+										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="three-2" class="answer" value="плиссе" id="three-2">
+									<label for="three-2" class="calculation__item_label">
+										<span>плиссе</span>
+										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="four-2" class="answer" value="вертикальные жалюзи" id="four-2">
+									<label for="four-2" class="calculation__item_label">
+										<span>вертикальные жалюзи</span>
+										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div id="services-tab-3" class="services-tab">
+							<div class="calculation__content">
+								<h3>Честная скидка!</h3>
+								<p>
+									Вы поможете нам сэкономить бюджет на
+									<br>привлечение клиентов,мы сделаем вам
+									<br>за это реальную скидку от стоимости!
+								</p>
+								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+								<span class="calculation__number">15%</span>
+							</div>
+
+							<div class="calculation__list">
+
+								<div class="calculation__item">
+									<input type="checkbox" name="one-3" class="answer" value="рулонные шторы" id="one-3">
+									<label for="one-3" class="calculation__item_label">
+										<span>рулонные шторы</span>
+										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="two-3" class="answer" value="горизонтальные жалюзи" id="two-3">
+									<label for="two-3" class="calculation__item_label">
+										<span>горизонтальные жалюзи</span>
+										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="three-3" class="answer" value="плиссе" id="three-3">
+									<label for="three-3" class="calculation__item_label">
+										<span>плиссе</span>
+										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+
+								<div class="calculation__item">
+									<input type="checkbox" name="four-3" class="answer" value="вертикальные жалюзи" id="four-3">
+									<label for="four-3" class="calculation__item_label">
+										<span>вертикальные жалюзи</span>
+										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div id="services-tab-4" class="services-tab">
+							<div class="calculation__content">
+								<h3>Честная скидка!</h3>
+								<p>
+									Вы поможете нам сэкономить бюджет на
+									<br>привлечение клиентов,мы сделаем вам
+									<br>за это реальную скидку от стоимости!
+								</p>
+								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+								<span class="calculation__number">15%</span>
+							</div>
+
+							<div class="calculation__form">
+
+								<h3>Что бы закрепить за собой скидку в размере 15% и получить точный расчет стоимости</h3>
+								
+								<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
+
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+
+								<div><button type="submit" class="btn footer__form_btn" name="submit">рассчитать цену</button></div>
+
+								<p></p>
 
 							</div>
 						</div>
 
+
+						<ul class="tabs-list">
+							<li>
+								<a href="#services-tab-1" class="tabs__link">Шаг первый</a>
+							</li>
+							<li>
+								<a href="#services-tab-2" class="tabs__link">Шаг второй</a>
+							</li>
+							<li>
+								<a href="#services-tab-3" class="tabs__link">Шаг третий</a>
+							</li>
+							<li>
+								<a href="#services-tab-4" class="tabs__link">Получить скидку</a>
+							</li>
+						</ul>
 					</div>
 				</form>
 
