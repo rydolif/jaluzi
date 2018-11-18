@@ -169,6 +169,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 					<div class="element-item metalloid" data-category="metalloid">
 						<img src="img/filter-2.jpg" alt="">
@@ -192,6 +199,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 					<div class="element-item post-transition metal" data-category="post-transition">
 						<img src="img/filter-3.jpg" alt="">
@@ -215,6 +229,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 					<div class="element-item post-transition metal" data-category="post-transition">
 						<img src="img/filter-4.jpg" alt="">
@@ -238,6 +259,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 					<div class="element-item transition metal" data-category="transition">
 						<img src="img/filter-5.jpg" alt="">
@@ -261,6 +289,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 					<div class="element-item alkali metal" data-category="alkali">
 						<img src="img/filter-6.jpg" alt="">
@@ -284,6 +319,13 @@
 								<br>тканей
 							</p>
 						</div>
+						<form action="sendmail.php" class="filter__form form" method="post">
+							<input type="hidden" name="subject" value="Узнать подробнее!">
+							<div class="form__line">
+								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -321,7 +363,7 @@
 							<div class="calculation__list">
 
 								<div class="calculation__item">
-									<input type="checkbox" name="one" class="answer" value="рулонные шторы" id="one">
+									<input type="checkbox" name="one" class="answer answer-one" value="рулонные шторы" id="one">
 									<label for="one" class="calculation__item_label">
 										<span>рулонные шторы</span>
 										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
@@ -329,7 +371,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="two" class="answer" value="горизонтальные жалюзи" id="two">
+									<input type="checkbox" name="two" class="answer answer-one" value="горизонтальные жалюзи" id="two">
 									<label for="two" class="calculation__item_label">
 										<span>горизонтальные жалюзи</span>
 										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
@@ -337,7 +379,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="three" class="answer" value="плиссе" id="three">
+									<input type="checkbox" name="three" class="answer answer-one" value="плиссе" id="three">
 									<label for="three" class="calculation__item_label">
 										<span>плиссе</span>
 										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
@@ -345,12 +387,16 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="four" class="answer" value="вертикальные жалюзи" id="four">
+									<input type="checkbox" name="four" class="answer answer-one" value="вертикальные жалюзи" id="four">
 									<label for="four" class="calculation__item_label">
 										<span>вертикальные жалюзи</span>
 										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
 									</label>
 								</div>
+							</div>
+
+							<div class="services-tabs__wrap-btn">
+								<a href="#services-tab-2" class="btn services-tabs__next services-tabs__next-one">Следующий шаг</a>
 							</div>
 						</div>
 
@@ -369,7 +415,7 @@
 							<div class="calculation__list">
 
 								<div class="calculation__item">
-									<input type="checkbox" name="one-2" class="answer" value="рулонные шторы" id="one-2">
+									<input type="checkbox" name="one-2" class="answer answer-two" value="рулонные шторы" id="one-2">
 									<label for="one-2" class="calculation__item_label">
 										<span>рулонные шторы</span>
 										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
@@ -377,7 +423,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="two-2" class="answer" value="горизонтальные жалюзи" id="two-2">
+									<input type="checkbox" name="two-2" class="answer answer-two" value="горизонтальные жалюзи" id="two-2">
 									<label for="two-2" class="calculation__item_label">
 										<span>горизонтальные жалюзи</span>
 										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
@@ -385,7 +431,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="three-2" class="answer" value="плиссе" id="three-2">
+									<input type="checkbox" name="three-2" class="answer answer-two" value="плиссе" id="three-2">
 									<label for="three-2" class="calculation__item_label">
 										<span>плиссе</span>
 										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
@@ -393,12 +439,16 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="four-2" class="answer" value="вертикальные жалюзи" id="four-2">
+									<input type="checkbox" name="four-2" class="answer answer-two" value="вертикальные жалюзи" id="four-2">
 									<label for="four-2" class="calculation__item_label">
 										<span>вертикальные жалюзи</span>
 										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
 									</label>
 								</div>
+							</div>
+
+							<div class="services-tabs__wrap-btn">
+								<a href="#services-tab-3" class="btn services-tabs__next services-tabs__next-two">Следующий шаг</a>
 							</div>
 						</div>
 
@@ -417,7 +467,7 @@
 							<div class="calculation__list">
 
 								<div class="calculation__item">
-									<input type="checkbox" name="one-3" class="answer" value="рулонные шторы" id="one-3">
+									<input type="checkbox" name="one-3" class="answer answer-three" value="рулонные шторы" id="one-3">
 									<label for="one-3" class="calculation__item_label">
 										<span>рулонные шторы</span>
 										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
@@ -425,7 +475,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="two-3" class="answer" value="горизонтальные жалюзи" id="two-3">
+									<input type="checkbox" name="two-3" class="answer answer-three" value="горизонтальные жалюзи" id="two-3">
 									<label for="two-3" class="calculation__item_label">
 										<span>горизонтальные жалюзи</span>
 										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
@@ -433,7 +483,7 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="three-3" class="answer" value="плиссе" id="three-3">
+									<input type="checkbox" name="three-3" class="answer answer-three" value="плиссе" id="three-3">
 									<label for="three-3" class="calculation__item_label">
 										<span>плиссе</span>
 										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
@@ -441,12 +491,16 @@
 								</div>
 
 								<div class="calculation__item">
-									<input type="checkbox" name="four-3" class="answer" value="вертикальные жалюзи" id="four-3">
+									<input type="checkbox" name="four-3" class="answer answer-three" value="вертикальные жалюзи" id="four-3">
 									<label for="four-3" class="calculation__item_label">
 										<span>вертикальные жалюзи</span>
 										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
 									</label>
 								</div>
+							</div>
+
+							<div class="services-tabs__wrap-btn">
+								<a href="#services-tab-4" class="btn services-tabs__next services-tabs__next-three">Следующий шаг</a>
 							</div>
 						</div>
 
@@ -476,7 +530,6 @@
 
 							</div>
 						</div>
-
 
 						<ul class="tabs-list">
 							<li>
@@ -717,7 +770,7 @@
 					<div class="question__list">
 						<div class="question__item">
 							<svg><use xlink:href="#house"></use></svg>
-							<p>г. Минск, ул. Плеханова, д.56к.2, к. 19</p>
+							<p>г. Минск, ул. Плеханова, д.56 к.2, к. 19</p>
 						</div>
 						<div class="question__item">
 							<svg><use xlink:href="#telephone"></use></svg>
@@ -800,152 +853,8 @@
 
 	<script>
       function initMap() {
-        var uluru = {lat: 53.8641293, lng: 27.5933674};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru,
-          styles: [
-		    {
-		        "featureType": "administrative",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "saturation": "-100"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "administrative.province",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "visibility": "off"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "landscape",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "saturation": -100
-		            },
-		            {
-		                "lightness": 65
-		            },
-		            {
-		                "visibility": "on"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "poi",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "saturation": -100
-		            },
-		            {
-		                "lightness": "50"
-		            },
-		            {
-		                "visibility": "simplified"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "road",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "saturation": "-100"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "road.highway",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "visibility": "simplified"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "road.arterial",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "lightness": "30"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "road.local",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "lightness": "40"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "transit",
-		        "elementType": "all",
-		        "stylers": [
-		            {
-		                "saturation": -100
-		            },
-		            {
-		                "visibility": "simplified"
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "water",
-		        "elementType": "geometry",
-		        "stylers": [
-		            {
-		                "hue": "#ffff00"
-		            },
-		            {
-		                "lightness": -25
-		            },
-		            {
-		                "saturation": -97
-		            }
-		        ]
-		    },
-		    {
-		        "featureType": "water",
-		        "elementType": "labels",
-		        "stylers": [
-		            {
-		                "lightness": -25
-		            },
-		            {
-		                "saturation": -100
-		            }
-		        ]
-		    }
-		]
-
-        });
-
-
-          var marker = new google.maps.Marker({
-            position: {lat: 53.8641293, lng: 27.5933674},
-            map: map,
-            icon: 'img/map.png'
-          });
-
-          var infowindow = new google.maps.InfoWindow({
-                content: contentString
-              });
-
-              infowindow.open(map, marker);
-
-          }
+        var uluru = {lat: 53.8641148, lng: 27.5954652};
+        var map=new google.maps.Map(document.getElementById('map'),{zoom:16,center:uluru,styles:[{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]});var marker=new google.maps.Marker({position:uluru,map:map,icon:'img/map.png'});var infowindow=new google.maps.InfoWindow({content:contentString});infowindow.open(map,marker);}
     </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>

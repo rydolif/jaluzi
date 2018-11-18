@@ -1,5 +1,7 @@
 
 @media only screen and (max-width : 1200px)
+	.calculation .services-tabs__wrap-btn
+		bottom: -68px
 	
 	.calculation
 
@@ -52,6 +54,8 @@
 		
 
 @media only screen and (max-width : 992px)
+	.calculation .tabs-list
+		width: 70%
 	
 	.calculation
 		&__content
@@ -150,12 +154,19 @@
 		&__map
 			width: 100%
 
+	.footer
+		padding: 15px 0
+
 
 
 @media only screen and (max-width : 767px)
+	
+	.calculation .services-tabs__wrap-btn
+		bottom: -115px
 
 	.calculation
 		overflow: hidden
+		padding-bottom: 100px
 
 		&__bg-left
 			display: none
@@ -225,9 +236,15 @@
 			span
 				width: 30px
 				height: 30px
+
 				&::before
 					width: 20px
 					height: 20px
+
+				&::after
+					width: 30px
+					height: 30px
+
 			svg
 				width: 10px
 				height: 10px

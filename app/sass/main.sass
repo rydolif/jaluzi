@@ -5,12 +5,15 @@
 .container
 	position: relative
 
+.section
+	overflow: hidden
+
 .header
 	position: absolute
 	top: 0
 	right: 0
 	left: 0
-	padding-top: 30px
+	padding-top: 10px
 
 	&__arrow
 		position: absolute
@@ -76,9 +79,8 @@
 			display: block
 			width: 70px
 			height: 70px
-			border-radius: 100%
-			background-color: #d6b886
-
+			z-index: 1
+			
 			&::before
 				content: ""
 				position: absolute
@@ -90,6 +92,16 @@
 				background-color: $accent
 				border-radius: 100%
 
+			&::after
+				content: ''
+				position: absolute
+				width: 70px
+				height: 70px
+				border-radius: 100%
+				background-color: rgba($accent, .6)
+				animation: pulse 1.5s ease-in infinite
+				z-index: -1
+
 		svg
 			position: absolute
 			left: 50%
@@ -98,6 +110,7 @@
 			fill: #fff
 			width: 23px
 			height: 23px
+			animation: tel .8s ease-in infinite
 
 	&__info
 
@@ -107,7 +120,7 @@
 			line-height: 1.2
 
 	&--section
-		padding-top: 360px
+		padding-top: 250px
 		padding-bottom: 30px
 		background: url(../img/header-bg.jpg) center no-repeat / cover
 
@@ -222,9 +235,6 @@ h1
 	padding-top: 30px
 	background: url(../img/filter-bg.jpg) center no-repeat / cover
 
-	.grid
-
-
 	&__nav
 		display: flex
 		justify-content: space-between
@@ -242,7 +252,14 @@ h1
 	h2
 		font-weight: 300
 		margin-bottom: 80px
-	
+
+	&__form
+		opacity: 0
+		z-index: -1
+		height: 0
+		transform: scale(0)
+		transition: all .3s ease
+
 	.btn
 		margin-bottom: 5px
 		background-color: #fff
@@ -250,10 +267,19 @@ h1
 		padding: 0 20px
 		font-weight: 500
 		margin-right: 20px
-
+		
 		&:hover, &:focus
 			color: #fafafa
 			background: $accent
+
+		&--form
+			background: $accent
+			color: #fff
+			width: 40%
+
+	.form__line
+		margin-bottom: 0
+		margin-top: 15px
 
 	.is-checked
 		background: $accent
@@ -261,12 +287,23 @@ h1
 
 	.element-item
 		overflow: hidden
-		margin: 0 15px 30px 15px
+		margin: 0 15px 60px 15px
 		width: 30%
+		z-index: 1
 
 		&:hover, &:focus
 			.element-item__text
 				background-color: rgba($accent,  .85)
+
+			.filter__form
+				opacity: 1
+				z-index: 1
+				height: auto
+				transform: scale(1)
+
+			.element-item__text
+				bottom: 130px
+
 
 		img
 			height: 420px
@@ -275,12 +312,12 @@ h1
 
 		&__text
 			position: absolute
-			bottom: 70px
+			bottom: 85px
 			right: 0
 			left: 0
 			background-color: rgba(#312413,  .85)
 			color: #fff
-			transition: all .3s ease
+			transition: background .3s ease
 			line-height: 1.1
 			padding: 15px 30px
 			text-align: center
@@ -319,7 +356,7 @@ h1
 	&__bg-right
 		position: absolute
 		right: -5%
-		bottom: -50px
+		bottom: 70px
 	
 	&__text
 		position: relative
@@ -364,6 +401,31 @@ h1
 		display: flex
 		align-items: center
 
+	.services-tabs
+		position: relative
+
+		&__next
+			&--active
+				z-index: 1
+
+		&__wrap-btn
+			position: absolute
+			right: 0
+			bottom: -125px
+			z-index: 1
+
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				z-index: 1
+				background: rgba(255, 255, 255, .4)
+
 	.tabs-list
 		position: absolute
 		bottom: 0
@@ -373,6 +435,17 @@ h1
 		justify-content: space-around
 		font-size: 16px
 		font-weight: 600
+
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			z-index: 1
 
 		a
 			color: #c3c3c3
@@ -483,6 +556,7 @@ h1
 				span
 					background: $accent
 					transform: scale(1)
+
 
 .quality
 	padding-top: 60px
@@ -614,6 +688,7 @@ h1
 
 
 .measurements
+	overflow: inherit
 	padding-top: 115px
 	padding-bottom: 125px
 	background-color: #f6f6f6
@@ -627,7 +702,7 @@ h1
 	&__bg
 		position: absolute
 		left: -240px
-		top: -185px
+		top: -165px
 
 	&__points
 		position: absolute
@@ -638,6 +713,13 @@ h1
 
 		.btn
 			margin-right: 0
+			margin-left: 10px
+
+		input
+			max-width: 300px
+
+		.form__line
+			justify-content: space-around
 
 	h2
 		padding-left: 35px

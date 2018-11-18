@@ -35,24 +35,40 @@ $(function() {
   });
 
 //--------------------calculation----------------------------
-  // $(".answer").each(function(index, el) {
-  //   $(el).addClass('answer-' + index);
+  $(".answer").each(function(index, el) {
+    $(el).addClass('answer-' + index);
 
-  //   // $('.answer-' + index).on('change', function() {
-  //   //     var btn = $('.btn');
+    $('.answer-' + index).on('change', function() {
 
-  //   //     if ( btn.attr('disabled') ){
-  //   //       btn.removeAttr("disabled");
-  //   //       $('label').removeClass('calculation__item--active');
-  //   //     }
-  //   //     else{
-  //   //       btn.attr("disabled", true);
-  //   //       $('label').addClass('calculation__item--active');
-  //   //     }
+      //--------------------one----------------------------
+        if(  $('.answer-one').is(':checked') ){
+          $('.services-tabs__next-one').addClass('services-tabs__next--active');
+        }
+        else{
+          $('.services-tabs__next-one').removeClass('services-tabs__next--active');
+        }
 
-  //   // });
+        //--------------------two----------------------------
+        if(  $('.answer-two').is(':checked') ){
+          $('.services-tabs__next-two').addClass('services-tabs__next--active');
+        }
+        else{
+          $('.services-tabs__next-two').removeClass('services-tabs__next--active');
+        }
 
-  // });
+        //--------------------three----------------------------
+        if(  $('.answer-three').is(':checked') ){
+          $('.services-tabs__next-three').addClass('services-tabs__next--active');
+        }
+        else{
+          $('.services-tabs__next-three').removeClass('services-tabs__next--active');
+        }
+
+
+
+    });
+
+  });
 
 //-------------------------скорость якоря перший екран---------------------------------------
   $(".header--section__block").on("click","a", function (event) {
@@ -299,7 +315,7 @@ $(function() {
       'use strict';
 
       var file     = 'img/symbols.html',
-          revision = 1.2;
+          revision = 1.1;
 
       if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
           return true;
