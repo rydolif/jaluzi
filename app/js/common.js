@@ -43,6 +43,7 @@ $(function() {
       //--------------------one----------------------------
         if(  $('.answer-one').is(':checked') ){
           $('.services-tabs__next-one').addClass('services-tabs__next--active');
+
         }
         else{
           $('.services-tabs__next-one').removeClass('services-tabs__next--active');
@@ -63,12 +64,25 @@ $(function() {
         else{
           $('.services-tabs__next-three').removeClass('services-tabs__next--active');
         }
-
-
-
     });
 
   });
+
+  $( "#services-tab-1 input" ).on( "click", function() {
+    $( "#base" ).val( $( ".answer-one:checked" ).val());
+  });
+  $( "#services-tab-2 input" ).on( "click", function() {
+    $( "#basetwo" ).val( $( ".answer-two:checked" ).val());
+  });
+  $( "#services-tab-3 input" ).on( "click", function() {
+    $( "#basethree" ).val( $( ".answer-three:checked" ).val());
+  });
+
+
+  // $(".answer-one").click(function() {
+  //   $('.answer-one').removeAttr('checked');
+  //    // $(this).attr('checked');
+  // });
 
 //-------------------------скорость якоря перший екран---------------------------------------
   $(".header--section__block").on("click","a", function (event) {
@@ -93,6 +107,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    infinite: false,
     asNavFor: '.quality-nav'
   });
   $('.quality-nav').slick({
@@ -126,6 +141,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    infinite: false,
     asNavFor: '.reviews-nav'
   });
   $('.reviews-nav').slick({
@@ -152,6 +168,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.production-nav',
+    infinite: false,
     responsive: [
       {
         breakpoint: 767,
@@ -244,10 +261,10 @@ $(function() {
   $('.modal').popup({transition: 'all 0.3s'});
 
 //------------------------------------form-------------------------------------------
-  $('input[type="tel"]').mask('+0 (000) 000-00-00');
+  $('input[type="tel"]').mask('+375 (00) 000-00-00');
 
   jQuery.validator.addMethod("phoneno", function(phone_number, element) {
-     return this.optional(element) || phone_number.match(/\+[0-9]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/);
+     return this.optional(element) || phone_number.match(/\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/);
   }, "Введите Ваш телефон");
 
   $(".form").each(function(index, el) {
@@ -275,6 +292,11 @@ $(function() {
           widht: jQuery('.form-' + index).find("input[name=widht]").val(),
           height: jQuery('.form-' + index).find("input[name=height]").val(),
           type: jQuery('.form-' + index).find("select[name=type]").val(),
+
+          baseone: jQuery('.form-' + index).find("input[name=baseone]").val(),
+          basetwo: jQuery('.form-' + index).find("input[name=basetwo]").val(),
+          basethree: jQuery('.form-' + index).find("input[name=basethree]").val(),
+
           subject: jQuery('.form-' + index).find("input[name=subject]").val()
         };
         ajaxSend('.form-' + index, t);
@@ -297,8 +319,6 @@ $(function() {
       }
     });
   }
-
-
  
 });
 
@@ -315,7 +335,7 @@ $(function() {
       'use strict';
 
       var file     = 'img/symbols.html',
-          revision = 1.1;
+          revision = 1.5;
 
       if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
           return true;

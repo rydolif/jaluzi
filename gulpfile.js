@@ -29,7 +29,9 @@ gulp.task('browser-sync', function() {
 	})
 });
 
-gulp.task('styles', function() {
+
+
+gulp.task('minstyles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
@@ -38,6 +40,38 @@ gulp.task('styles', function() {
 	.pipe(gulp.dest('app/css'))
 	.pipe(browsersync.reload( {stream: true} ))
 });
+
+
+gulp.task('styles', function() {
+	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+	.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
+	.pipe(autoprefixer(['last 15 versions']))
+	.pipe(gulp.dest('app/css'))
+	.pipe(browsersync.reload( {stream: true} ))
+});
+
+gulp.task('minjs', function() {
+	return gulp.src([
+		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
+		'app/libs/jquery.validate.js', 					//----форма
+		'app/libs/jquery.mask.min.js', 					//----форма
+		'app/libs/jquery.popupoverlay.js', 				//----модалки
+		'app/libs/slick/slick.js', 						//----слайдер
+		'app/libs/jquery.tabslet.min.js', 				//----таби
+		// 'app/libs/swiper/swiper.min.js', 			//----слайдер
+		'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
+		// 'app/libs/jquery.spincrement.min.js', 		//----цифри анімованні
+		// 'app/libs/masonry.pkgd.js',					//----сетка елементов
+		'app/libs/isotope.pkgd.min.js', 				//----сетка елементов + фильтр
+		'app/js/common.js', // Always at the end
+	])
+	.pipe(plumber())
+	.pipe(concat('scripts.min.js'))
+	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(gulp.dest('app/js'))
+	.pipe(browsersync.reload({ stream: true }))
+});
+
 
 gulp.task('js', function() {
 	return gulp.src([
@@ -48,18 +82,18 @@ gulp.task('js', function() {
 		'app/libs/slick/slick.js', 						//----слайдер
 		'app/libs/jquery.tabslet.min.js', 				//----таби
 		// 'app/libs/swiper/swiper.min.js', 			//----слайдер
-		// 'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
+		'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
 		// 'app/libs/jquery.spincrement.min.js', 		//----цифри анімованні
 		// 'app/libs/masonry.pkgd.js',					//----сетка елементов
 		'app/libs/isotope.pkgd.min.js', 				//----сетка елементов + фильтр
 		'app/js/common.js', // Always at the end
-		])
+	])
 	.pipe(plumber())
-	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Mifify js (opt.)
+	.pipe(concat('scripts.js'))
 	.pipe(gulp.dest('app/js'))
 	.pipe(browsersync.reload({ stream: true }))
 });
+
 
 gulp.task('rsync', function() {
 	return gulp.src('app/**')
@@ -76,9 +110,11 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
+gulp.task('watch', ['minstyles', 'minjs', 'styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);	
+	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['minstyles']);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['minjs']);
 	gulp.watch('app/*.html', browsersync.reload)
 });
 
@@ -105,3 +141,5 @@ gulp.task('symbols', function() {
 });
 
 gulp.task('default', ['watch']);
+
+

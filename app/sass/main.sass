@@ -7,13 +7,14 @@
 
 .section
 	overflow: hidden
+	transition: all .6s
 
 .header
 	position: absolute
 	top: 0
 	right: 0
 	left: 0
-	padding-top: 10px
+	padding-top: 5px
 
 	&__arrow
 		position: absolute
@@ -49,7 +50,6 @@
 		a
 			display: flex
 			align-items: center
-			margin-bottom: 10px
 		
 		span
 			color: $text
@@ -122,7 +122,10 @@
 	&--section
 		padding-top: 250px
 		padding-bottom: 30px
-		background: url(../img/header-bg.jpg) center no-repeat / cover
+		background: url(../img/header-bg.jpg)
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
 
 		p
 			font-size: 24px
@@ -233,7 +236,7 @@ h1
 
 .filter
 	padding-top: 30px
-	background: url(../img/filter-bg.jpg) center no-repeat / cover
+	background: url(../img/filter-bg.jpg) top
 
 	&__nav
 		display: flex
@@ -254,10 +257,10 @@ h1
 		margin-bottom: 80px
 
 	&__form
-		opacity: 0
-		z-index: -1
-		height: 0
-		transform: scale(0)
+		// opacity: 0
+		// z-index: -1
+		// height: 0
+		// transform: scale(0)
 		transition: all .3s ease
 
 	.btn
@@ -301,18 +304,14 @@ h1
 				height: auto
 				transform: scale(1)
 
-			.element-item__text
-				bottom: 130px
-
-
 		img
-			height: 420px
+			// height: 420px
 			width: 100%
 			margin-bottom: 25px
 
 		&__text
 			position: absolute
-			bottom: 85px
+			bottom: 130px
 			right: 0
 			left: 0
 			background-color: rgba(#312413,  .85)
@@ -333,18 +332,19 @@ h1
 
 
 .calculation
-	padding-top: 80px
+	padding-top: 60px
 	padding-bottom: 60px
 
 	h2
-		margin-bottom: 40px
+		margin-bottom: 30px
+		line-height: 1.2
 
 	h3
 		font-size: 24px
-		margin-bottom: 30px
+		margin-bottom: 20px
 
 	p
-		margin-bottom: 80px
+		margin-bottom: 10px
 		font-size: 16px
 		line-height: 1.3
 
@@ -395,7 +395,7 @@ h1
 
 	&__container
 		position: relative
-		padding-bottom: 120px
+		padding-bottom: 60px
 
 	.services-tab
 		display: flex
@@ -411,7 +411,7 @@ h1
 		&__wrap-btn
 			position: absolute
 			right: 0
-			bottom: -125px
+			bottom: -65px
 			z-index: 1
 
 			&::before
@@ -457,7 +457,7 @@ h1
 		
 	&__content
 		position: relative
-		width: 33%
+		width: 40%
 		height: 100%
 		border-left: 1px solid $text
 		padding-left: 20px
@@ -476,28 +476,31 @@ h1
 		display: flex
 		flex-direction: row
 		flex-wrap: wrap
-		width: 66%
+		width: 60%
+	
+		input[type="checkbox"]
+			display: none
 
 	&__item
 		position: relative
-		width: 380px
-		height: 380px
+		width: 33.33%
+		height: 233px
 		background: #fff
 		z-index: 1
 		box-shadow: 0 0 2px rgba(0, 0, 0, .1)
 
-		input[type="checkbox"]
+		input[type="radio"]
 			display: none
 
-		input[type="checkbox"]:checked + label::before
+		input[type="radio"]:checked + label::before
 			background: rgba(0, 0, 0, .5)
 			transform: scale(1)
 
-		input[type="checkbox"]:checked + label::after
+		input[type="radio"]:checked + label::after
 			opacity: 1
 			transform: translate(-50%, -50%) scale(1)
 
-		input[type="checkbox"]:checked + label span
+		input[type="radio"]:checked + label span
 		 	background: $accent !important
 
 		span
@@ -505,7 +508,7 @@ h1
 			text-align: right
 			background: #404040
 			line-height: 1
-			padding: 10px 40px
+			padding: 10px 20px
 			color: #fff
 			transition: all .3s ease
 			z-index: 2
@@ -516,6 +519,8 @@ h1
 			top: 50%
 			transform: translate(-50%, -50%)
 			z-index: -2
+			width: 50%
+			height: 50%
 
 		&_label
 			position: relative
@@ -565,10 +570,12 @@ h1
 
 	h2
 		margin-bottom: 25px
+
+
 	
 	&__img
-		max-height: 470px
-		max-width: 675px
+		max-height: 500px
+		max-width: 500px
 		width: 100%
 		height: 100%
 		margin-right: 100px
@@ -650,9 +657,12 @@ h1
 	h2
 		margin-bottom: 115px
 
-	img, iframe
+	iframe
+		height: 400px
+		width: 670px
 		max-height: 400px
 		max-width: 670px
+
 
 	&__bg
 		position: absolute
@@ -741,6 +751,38 @@ h1
 
 	&-for
 		margin-bottom: 135px
+
+		a
+			position: relative
+			display: block
+
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				background: rgba(0,0,0,.7)
+				transform: scale(0)
+				transition: all .5s
+
+			&::after
+				content: url(../img/hover.png)
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%) scale(0)
+				transition: all .5s
+
+			&:hover
+				&::before
+					transform: scale(1)
+
+				&::after
+					transform: translate(-50%, -50%) scale(1) 
 
 	&__sub-title
 		margin-bottom: 150px

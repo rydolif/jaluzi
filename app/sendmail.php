@@ -1,5 +1,5 @@
 <?php
-	$SITE_TITLE = 'LeoLoft';
+	$SITE_TITLE = 'Jaluzi';
 	$SITE_DESCR = '';
 
 	if ( isset($_POST) ) {
@@ -8,8 +8,13 @@
 		$widht = htmlspecialchars(trim($_POST['widht']));
 		$height = htmlspecialchars(trim($_POST['height']));
 		$type = htmlspecialchars(trim($_POST['type']));
+
+		$baseone = htmlspecialchars(trim($_POST['baseone']));
+		$basetwo = htmlspecialchars(trim($_POST['basetwo']));
+		$basethree = htmlspecialchars(trim($_POST['basethree']));
+
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
-		$to = 'rudolifrudolif@gmail.com';
+		$to = 'info@jaluzi5.by';
 
 		$headers = "From: $SITE_TITLE \r\n";
 		$headers .= "Reply-To: ". $email . "\r\n";
@@ -20,7 +25,6 @@
 		$data .= 'Имя: '.$name."<br>";
 		$data .= 'Телефон: '.$phone."<br>";
 
-
 		if ( $widht != '' ) {
 			$data .= 'Ширина: ' . $widht ."<br>";
 		}
@@ -30,6 +34,18 @@
 
 		if ( $height != '' ) {
 			$data .= 'Высота: ' . $height ."<br>";
+		}
+
+		if ( $baseone != '' ) {
+			$data .= 'Выберите тип изделия: ' . $baseone ."<br>";
+		}
+
+		if ( $basetwo != '' ) {
+			$data .= 'Какая категория штор вас интересует: ' . $basetwo ."<br>";
+		}
+
+		if ( $basethree != '' ) {
+			$data .= 'На сколько окон нужно установить рольшторы: ' . $basethree ."<br>";
 		}
 
 		$message = "<div style='background:#ccc;border-radius:10px;padding:20px;'>
@@ -51,4 +67,5 @@
 			echo '<div class="error">Ошибка, данные формы не переданы.</div>';
 	}
 	die();
+
 ?>

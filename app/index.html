@@ -36,763 +36,1090 @@
 
 				<div class="header__info">
 					<p>с 9:00 до 21:00 ежедневно</p>
-					<a href="+375293322943">+375 (29) 332 29 43</a>
-					<a href="+375333522943">+375 (33) 352 29 43</a>
+					<a href="tel:+375293322943">+375 (29) 332 29 43</a>
+					<a href="tel:+375333522943">+375 (33) 352 29 43</a>
 				</div>
 
 			</div>
 		</div>
 	</header>
 
-	<main class="main">
+	<section class="header--section section" id="header--section">
+		<div class="container">
 
-		<section class="header--section section" id="header--section">
-			<div class="container">
+			<h1>
+				<img src="img/h1.png" alt="">
+				<b>РОЛЬШТОРЫ И ЖАЛЮЗИ</b> <br>ВСЕХ ВИДОВ
+				<span>от <b>29</b> руб/изд</span>
+			</h1>
 
-				<h1>
-					<img src="img/h1.png" alt="">
-					<b>РОЛЬШТОРЫ И ЖАЛЮЗИ</b> <br>ВСЕХ ВИДОВ
-					<span>от <b>29</b> руб/изд</span>
-				</h1>
+			<p>
+				Пока другие компании переходят 
+				<br> на дешевые китайские ткани и комплектующие,
+				<br> мы <b>гарантируем лучшие</b> в Минске <b>цены</b>
+				<br> на европейские материалы
+			</p>
 
-				<p>
-					Пока другие компании переходят 
-					<br> на дешевые китайские ткани и комплектующие,
-					<br> мы <b>гарантируем лучшие</b> в Минске <b>цены</b>
-					<br> на европейские материалы
-				</p>
+			<div class="header--section__block">
+				<a href="#plus" class="header--section__link-bottom">узнать подробнее <span></span></a>
 
-				<div class="header--section__block">
-					<a href="#plus" class="header--section__link-bottom">узнать подробнее <span></span></a>
+				<div class="header--section__form">
 
-					<div class="header--section__form">
+					<span class="header__arrow"></span>
 
-						<span class="header__arrow"></span>
+					<h3>Рассчитайте цену<br> за 5 минут <img src="img/header-form.png" alt=""></h3>
+					<p>Назовем честную цену по телефону, которая <br>не поменяется при замере</p>
 
-						<h3>Рассчитайте цену<br> за 5 минут <img src="img/header-form.png" alt=""></h3>
-						<p>Назовем честную цену по телефону, которая <br>не поменяется при замере</p>
+					<form action="sendmail.php" class="form" method="post">
+						<input type="hidden" name="subject" value="Рассчитайте цену за 5 минут">
+						<div>
+							<select name="type">
+								<option disabled selected >выберите тип изделия</option>
+								<option>Свободновисящие рольшторы</option>
+								<option>Кассетные рольшторы</option>
+								<option>Рольшторы День-Ночь</option>
+								<option>Рольшторы с фотопечатью</option>
+								<option>Рольшторы на пульте управления</option>
+								<option>Алюминиевые жалюзи</option>
+								<option>Бамбуковые жалюзи</option>
+								<option>Пластиковые жалюзи</option>
+								<option>Вертикальные жалюзи</option>
+								<option>Тканевые жалюзи</option>
+								<option>Жалюзи с фотопечатью</option>
+								<option>Мультифактурные жалюзи</option>
+								<option>Японские шторы</option>
+								<option>Римские шторы</option>
+								<option>Шторы-Плиссе</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<div><input type="number" name="height" placeholder="высота" required></div>
+							<div><input type="number" name="widht" placeholder="ширина" required></div>
+						</div>
+						<div class="form__line">
+							<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+						</div>
+						<div><button type="submit" class="btn footer__form_btn" name="submit">рассчитать цену</button></div>
+					</form>
 
-						<form action="sendmail.php" class="form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div>
-								<select name="type">
-									<option disabled selected >выберите тип изделия</option>
-									<option>Пункт 1</option>
-									<option>Пункт 2</option>
-								</select>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="plus section" id="plus">
+		<div class="container">
+			
+			<div class="plus__list">
+				<div class="plus__item">
+					<svg><use xlink:href="#repair-tools"></use></svg>
+					<p>Собственное <br>производство</p>
+				</div>
+				<div class="plus__item">
+					<svg><use xlink:href="#measure"></use></svg>
+					<p>Замер, доставка <br>и монтаж <br>бесплатно</p>
+				</div>
+				<div class="plus__item">
+					<svg><use xlink:href="#guarantee"></use></svg>
+					<p>Пожизненная <br> гарантия <br>на монтаж</p>
+				</div>
+				<div class="plus__item">
+					<svg><use xlink:href="#certificate"></use></svg>
+					<p>3 года гарантии  <br>на материалы</p>
+				</div>
+				<div class="plus__item">
+					<svg><use xlink:href="#discount"></use></svg>
+					<p>скидки на <br> обьемы</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="filter section">
+		<div class="container">
+
+			<h2><img src="img/logo.png" alt="logo"> Производим рольшторы и жалюзи всех видов</h2>
+			
+			<div class="filter__nav">
+				<span>Тип <br>изделия</span>
+				<div id="filters" class="button-group">  
+					<button class="button btn is-checked" data-filter="*">Все</button>
+					<button class="button btn" data-filter=".one">Рулонные шторы</button>
+					<button class="button btn" data-filter=".two">Горизонтальные жалюзи</button>
+					<button class="button btn" data-filter=".three">Вертикальные жалюзи</button>
+					<button class="button btn" data-filter=".four">Другие виды</button>
+				</div>
+			</div>
+
+			<div class="grid">
+
+				<div class="element-item two">
+					<img src="img/filter/aluminzhaluzi.jpg" alt="">
+					<p class="element-item__text">
+						Алюминиевые жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Алюминиевые жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item two">
+					<img src="img/filter/derzhaluzi.png" alt="">
+					<p class="element-item__text">
+						Деревянные жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Деревянные жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item two">
+					<img src="img/filter/bambukzhaluzi.jpg" alt="">
+					<p class="element-item__text">
+						Бамбуковые жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Бамбуковые жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item two">
+					<img src="img/filter/plastikzhaluzi.jpg" alt="">
+					<p class="element-item__text">
+						Пластиковые жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Пластиковые жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item three">
+					<img src="img/filter/tkanevyezhaluzi.jpg" alt="">
+					<p class="element-item__text">
+						Тканевые жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Тканевые жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item three">
+					<img src="img/filter/zhaluzisfotopechatju.jpg" alt="">
+					<p class="element-item__text">
+						Жалюзи с фотопечатью
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Жалюзи с фотопечатью">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item three">
+					<img src="img/filter/multifakturnye.jpg" alt="">
+					<p class="element-item__text">
+						Мультифактурные жалюзи
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Мультифактурные жалюзи">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item four">
+					<img src="img/filter/japonskieshtory.jpeg" alt="">
+					<p class="element-item__text">
+						Японские шторы
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Японские шторы">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item four">
+					<img src="img/filter/rimskieshtory.jpg" alt="">
+					<p class="element-item__text">
+						Римские шторы
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Римские шторы">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item four">
+					<img src="img/filter/plisse.jpg" alt="">
+					<p class="element-item__text">
+						Шторы-Плиссе
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Шторы-Плиссе">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item one">
+					<img src="img/filter/svobodnovisjashhierolshtory.jpg" alt="">
+					<p class="element-item__text">
+						Свободновисящие рольшторы
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Свободновисящие рольшторыі">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item one">
+					<img src="img/filter/rolshtorykasset.jpg" alt="">
+					<p class="element-item__text">
+						Кассетные рольшторы
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Кассетные рольшторы">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item one">
+					<img src="img/filter/dennoch.jpg" alt="">
+					<p class="element-item__text">
+						Рольшторы День-Ночь
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Рольшторы День-Ночь">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+				
+				<div class="element-item one">
+					<img src="img/filter/fotopechat.jpg" alt="">
+					<p class="element-item__text">
+						Рольшторы с фотопечатью
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Рольшторы с фотопечатью">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="element-item one">
+					<img src="img/filter/pult.jpg" alt="">
+					<p class="element-item__text">
+						Рольшторы на пульте управления
+					</p>
+					<div class="element-item__info">
+						<p class="element-item__info_item">
+							<b>400</b>
+							<br>вариантов
+							<br>тканей
+						</p>
+						<p class="element-item__info_item">
+							<b>3</b>
+							<br>года 
+							<br>честной гарантии
+						</p>
+						<p class="element-item__info_item">
+							<b>от 1 дня</b>
+							<br>на замер
+							<br>и установку
+						</p>
+					</div>
+					<form action="sendmail.php" class="filter__form form" method="post">
+						<input type="hidden" name="subject" value="Рольшторы на пульте управления">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+							<button type="submit" class="btn btn--form" name="submit">Заказать</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="calculation section">
+		<div class="container">
+			
+			<h2><img src="img/logo.png" alt="logo"> Рассчитайте стоимость на сайте и <b> <br>получите скидку от 5 до 15%</b> от суммы</h2>
+
+			<p class="calculation__text">Выберите тип изделия <span></span></p>
+
+			<form action="sendmail.php" class="form" method="POST">
+				<input type="hidden" name="subject" value="Форма калькулятора скидки">
+
+				<div class="services-tabs calculation__container">
+					
+					<img src="img/production-left.png" alt="" class="calculation__bg-left">
+					<img src="img/production-right.png" alt="" class="calculation__bg-right">
+
+					<div id="services-tab-1" class="services-tab">
+						<div class="calculation__content">
+							<h3>Честная скидка!</h3>
+							<p>
+								Вы поможете нам сэкономить бюджет на
+								<br>привлечение клиентов,мы сделаем вам
+								<br>за это реальную скидку от стоимости!
+							</p>
+							<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+							<span class="calculation__number">5%</span>
+						</div>
+
+						<div class="calculation__list">
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Свободновисящие рольшторы" id="one" checked="">
+								<label for="one" class="calculation__item_label">
+									<span>Свободновисящие рольшторы</span>
+									<img src="img/calc1.jpg" alt="" class="calculation__item_img">
+								</label>
 							</div>
-							<div class="form__line">
-								<div><input type="number" name="height" placeholder="высота" required></div>
-								<div><input type="number" name="widht" placeholder="ширина" required></div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Кассетные рольшторы" id="two">
+								<label for="two" class="calculation__item_label">
+									<span>Кассетные рольшторы</span>
+									<img src="img/calc2.jpg" alt="" class="calculation__item_img">
+								</label>
 							</div>
-							<div class="form__line">
-								<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Рольшторы День-Ночь" id="three">
+								<label for="three" class="calculation__item_label">
+									<span>Рольшторы День-Ночь</span>
+									<img src="img/calc3.png" alt="" class="calculation__item_img">
+								</label>
 							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Рольшторы с фотопечатью" id="four">
+								<label for="four" class="calculation__item_label">
+									<span>Рольшторы с фотопечатью</span>
+									<img src="img/calc4.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Рольшторы на пульте управления" id="five">
+								<label for="five" class="calculation__item_label">
+									<span>Рольшторы на пульте управления</span>
+									<img src="img/calc5.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+							
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Жалюзи" id="six">
+								<label for="six" class="calculation__item_label">
+									<span>Жалюзи</span>
+									<img src="img/calc6.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio1" class="answer answer-one" value="Другие виды штор" id="seven">
+								<label for="seven" class="calculation__item_label">
+									<span>Другие виды штор</span>
+									<img src="img/calc7.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<input type="checkbox" name="baseone" class="answer answer-one" value="" id="base">
+
+						</div>
+
+						<div class="services-tabs__wrap-btn">
+							<a href="#services-tab-2" class="btn services-tabs__next services-tabs__next-one">Следующий шаг</a>
+						</div>
+					</div>
+
+					<div id="services-tab-2" class="services-tab">
+						<div class="calculation__content">
+							<h3>Честная скидка!</h3>
+							<p>
+								Вы поможете нам сэкономить бюджет на
+								<br>привлечение клиентов, мы сделаем вам
+								<br>за это реальную скидку от стоимости!
+							</p>
+							<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+							<span class="calculation__number">10%</span>
+						</div>
+
+						<div class="calculation__list">
+
+							<div class="calculation__item">
+								<input type="radio" name="radio2" class="answer answer-two" value="Из лучших европейских материалов" id="one-2">
+								<label for="one-2" class="calculation__item_label">
+									<span>Из лучших европейских материалов</span>
+									<img src="img/calc8.jpg" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio2" class="answer answer-two" value="Из хороших российских материалов" id="two-2">
+								<label for="two-2" class="calculation__item_label">
+									<span>Из хороших российских материалов</span>
+									<img src="img/calc9.jpg" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio2" class="answer answer-two" value="Из фабричных китайских материалов" id="three-2">
+								<label for="three-2" class="calculation__item_label">
+									<span>Из фабричных китайских материалов</span>
+									<img src="img/calc10.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio2" class="answer answer-two" value="Из самых дешевых материалов" id="four-2">
+								<label for="four-2" class="calculation__item_label">
+									<span>Из самых дешевых материалов</span>
+									<img src="img/calc11.jpg" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio2" class="answer answer-two" value="Хочу расчет цены по всем категориям" id="five-2">
+								<label for="five-2" class="calculation__item_label">
+									<span>Хочу расчет цены по всем категориям</span>
+									<img src="img/calc12.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<input type="checkbox" name="basetwo" class="answer answer-one" value="" id="basetwo">
+
+						</div>
+
+						<div class="services-tabs__wrap-btn">
+							<a href="#services-tab-3" class="btn services-tabs__next services-tabs__next-two">Следующий шаг</a>
+						</div>
+					</div>
+
+					<div id="services-tab-3" class="services-tab">
+						<div class="calculation__content">
+							<h3>Честная скидка!</h3>
+							<p>
+								Вы поможете нам сэкономить бюджет на
+								<br>привлечение клиентов, мы сделаем вам
+								<br>за это реальную скидку от стоимости!
+							</p>
+							<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+							<span class="calculation__number">15%</span>
+						</div>
+
+						<div class="calculation__list">
+
+							<div class="calculation__item">
+								<input type="radio" name="radio3" class="answer answer-three" value="1-2" id="one-3">
+								<label for="one-3" class="calculation__item_label">
+									<span>1-2</span>
+									<img src="img/calc13.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio3" class="answer answer-three" value="3-5" id="two-3">
+								<label for="two-3" class="calculation__item_label">
+									<span>3-5</span>
+									<img src="img/calc14.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio3" class="answer answer-three" value="5-10" id="three-3">
+								<label for="three-3" class="calculation__item_label">
+									<span>5-10</span>
+									<img src="img/calc15.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<div class="calculation__item">
+								<input type="radio" name="radio3" class="answer answer-three" value="Более 10" id="four-3">
+								<label for="four-3" class="calculation__item_label">
+									<span>Более 10</span>
+									<img src="img/calc16.png" alt="" class="calculation__item_img">
+								</label>
+							</div>
+
+							<input type="checkbox" name="basethree" class="answer answer-one" value="" id="basethree">
+
+						</div>
+
+						<div class="services-tabs__wrap-btn">
+							<a href="#services-tab-4" class="btn services-tabs__next services-tabs__next-three">Следующий шаг</a>
+						</div>
+					</div>
+
+					<div id="services-tab-4" class="services-tab">
+						<div class="calculation__content">
+							<h3>Честная скидка!</h3>
+							<p>
+								Вы поможете нам сэкономить бюджет на
+								<br>привлечение клиентов, мы сделаем вам
+								<br>за это реальную скидку от стоимости!
+							</p>
+							<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
+							<span class="calculation__number">15%</span>
+						</div>
+
+						<div class="calculation__form">
+
+							<h3>Чтобы закрепить за собой скидку в размере 15% и получить точный расчет стоимости, заполните форму ниже:</h3>
+							
+							<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
+
+							<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+
 							<div><button type="submit" class="btn footer__form_btn" name="submit">рассчитать цену</button></div>
-						</form>
 
+							<p></p>
+
+						</div>
+					</div>
+
+					<ul class="tabs-list">
+						<li>
+							<a href="#services-tab-1" class="tabs__link">Шаг первый</a>
+						</li>
+						<li>
+							<a href="#services-tab-2" class="tabs__link">Шаг второй</a>
+						</li>
+						<li>
+							<a href="#services-tab-3" class="tabs__link">Шаг третий</a>
+						</li>
+						<li>
+							<a href="#services-tab-4" class="tabs__link">Получить скидку</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+
+		</div>
+	</section>
+
+	<section class="quality section">
+		<div class="container">
+			
+			<h2><img src="img/logo.png" alt="logo"> Качество - наше главное преимущество!</h2>
+			<p class="quality__sub-title">Ключевые особенности нашей работы <br>или почему мы <b>даем пожизненную гарантию</b> на монтаж и <b>3 года расширенной гарантии</b> на материалы</p>
+
+			<div class="quality-for slider-for">
+				<div class="slider-for__item">
+					<img src="img/plus1.png" alt="" class="quality__img">
+					<div class="quality__content">
+						<p>Вежливые монтажники с опытом работы <b>от 5 лет</b></p>
+						<p>Собственный курс обучения монтажников, регулярные проверки качества и профессиональные навыки наших специалистов позволят нам сделать пожизненную гарантию на монтаж.</p>
+						<h3>Наш выбор - доверие клиентов.</h3>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<img src="img/plus2.png" alt="" class="quality__img">
+					<div class="quality__content">
+						<p>Профессиональный инструмент</p>
+						<p>В своей работе мы используем только качественный инструмент от лучшего строительного бренда Bosch</p>
+						<h3>Наш выбор - профессионализм.</h3>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<img src="img/plus3.png" alt="" class="quality__img">
+					<div class="quality__content">
+						<p>Собственное производство с европейским оборудованием</p>
+						<p>Мы не перепродаем рольшторы и жалюзи. Благодаря собственному производству, мы предлагаем вам цену ниже на 20% средней по рынку.</p>
+						<h3>Наш выбор - честные цены.</h3>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<img src="img/plus4.png" alt="" class="quality__img">
+					<div class="quality__content">
+						<p><b>Экологичные материалы</b> от топовых европейских производителей</p>
+						<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
+						<h3>Наш выбор - качество.</h3>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<img src="img/plus5.png" alt="" class="quality__img">
+					<div class="quality__content">
+						<p><b>Сервис высшего уровня</b></p>
+						<p>Мы бесплатно приезжаем на замер с каталогами и образцами к вам на объект, бесплатно делаем замеры и предлагаем решение в нескольких ценовых категориях. После этого производим ваши шторы и бесплатно устанавливаем. Вы платите только за производство.</p>
+						<h3>Наш выбор - идеальный сервис без переплат.</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="quality-nav slider-nav">
+				<div>Монтажники</div>
+				<div>Интструмент</div> 
+				<div>Производство</div>
+				<div>Материалы</div>
+				<div>Сервис</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="reviews section">
+		<div class="container">
+			
+			<h2><img src="img/logo.png" alt="logo"> Отзывы наших клиентов</h2>
+
+			<img src="img/reviews-bg.png" alt="" class="reviews__bg">
+			<img src="img/production-left.png" alt="" class="reviews__bg reviews__bg--left">
+
+			<div class="reviews-for slider-for">
+				<div class="slider-for__item">
+					<div class="reviews__block">
+						<img src="img/avatar1.jpg" alt="" class="reviews__avatar">
+						<div class="reviews__content">
+							<p>Очень понравились своим подходом! Выбирали жалюзи на 3 окна, получили очень хорошую консультацию, хорошую скидку. Заказ был готов уже на второй день. Все очень понравилось. Смело рекомендую  Jaluzi5!</p>
+							<h3>Иван, Минск</h3>
+						</div>
+					</div>
+					<div class="reviews__iframe">
+						<iframe src="https://www.youtube.com/embed/--GnK8XkrSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<div class="reviews__block">
+						<img src="img/avatar2.jpg" alt="" class="reviews__avatar">
+						<div class="reviews__content">
+							<p>Ребята предложили мне на балкон шторы День-Ночь и подобрали цвет под стены балкона. Очень мне пришлись по нраву. Приятно наблюдать, как это все выглядит теперь. Спасибо!</p>
+							<h3>Павел, Гродно</h3>
+						</div>
+					</div>
+					<div class="reviews__iframe">
+						<iframe src="https://www.youtube.com/embed/zfs0iGhMDF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<div class="reviews__block">
+						<img src="img/avatar3.jpg" alt="" class="reviews__avatar">
+						<div class="reviews__content">
+							<p>Просто потрясающе, очень доволен ребятами! Было очень сложно найти компанию, которая сможет взяться за мой заказ из-за выступающей балки. Ребята без проблем взялись за заказ. В оговоренное время приехали, померяли все. Сделали все за пару дней, привезли и установили. Буду всем вас рекомендовать!</p>
+							<h3>Александр, Минск</h3>
+						</div>
+					</div>
+					<div class="reviews__iframe">
+						<iframe src="https://www.youtube.com/embed/BPG41fJCbOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="slider-for__item">
+					<div class="reviews__block">
+						<img src="img/avatar4.jpg" alt="" class="reviews__avatar">
+						<div class="reviews__content">
+							<p>Обращаюсь не в первый раз. Год назад заказывал рольшторы домой. Теперь понадобились вертикальные жалюзи в офис. От оформления заказа до монтажа - все сделали очень оперативно. Спасибо монтажнику Илье, который все сделал очень аккуратно и без мусора. Спасибо!</p>
+							<h3>Дмитрий, Минск</h3>
+						</div>
+					</div>
+					<div class="reviews__iframe">
+						<iframe src="https://www.youtube.com/embed/YbomHa9wVFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 
 			</div>
-		</section>
 
-		<section class="plus section" id="plus">
-			<div class="container">
-				
-				<div class="plus__list">
-					<div class="plus__item">
-						<svg><use xlink:href="#repair-tools"></use></svg>
-						<p>Собственное <br>производство</p>
+
+			<div class="reviews-nav slider-nav">
+				<div>Иван, Минск</div>
+				<div>Павел, Гродно</div>
+				<div>Александр, Минск</div>
+				<div>Дмитрий, Минск</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="measurements section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-5">
+					<img src="img/measurements-bg.png" alt="" class="measurements__bg">
+					<img src="img/measurements-points.png" alt="" class="measurements__points">
+				</div>
+
+				<div class="col-lg-7">
+					<h2><img src="img/logo.png" alt="logo"> Пригласите специалиста на замер</h2>
+					<div class="measurements__content">
+						<p>Оставьте заявку и наш специалист приедет к вам на объект в удобное для вас время, привезет с собой каталоги и образцы материалов и предложит заключить договор на наилучших условиях.</p>
+						<p>Стоимость вам изначально назовут по телефону и при замере она ни на рубль не изменится.</p>
 					</div>
-					<div class="plus__item">
-						<svg><use xlink:href="#measure"></use></svg>
-						<p>Замер, доставка <br>и монтаж <br>бессплаьно</p>
-					</div>
-					<div class="plus__item">
-						<svg><use xlink:href="#guarantee"></use></svg>
-						<p>Пожизненная <br> гарантия <br>на монтаж</p>
-					</div>
-					<div class="plus__item">
-						<svg><use xlink:href="#certificate"></use></svg>
-						<p>3 года гарантии  <br>на материалы</p>
-					</div>
-					<div class="plus__item">
-						<svg><use xlink:href="#discount"></use></svg>
-						<p>скидки на <br> обьемы</p>
-					</div>
+					<form action="sendmail.php" class="measurements__form form" method="post">
+						<input type="hidden" name="subject" value="Узнать подробнее!">
+						<div class="form__line">
+							<div><input type="tel" name="phone" placeholder="Введите Телефон" required></div>
+							<button type="submit" class="btn footer__form_btn" name="submit">Пригласить замерщика</button>
+						</div>
+					</form>
+
 				</div>
 
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="filter section">
-			<div class="container">
+	<section class="production section">
+		<div class="container">
 
-				<h2><img src="img/logo.png" alt="logo"> Производим рольшторы и жалюзи всех видов</h2>
-				
-				<div class="filter__nav">
-					<span>Тип <br>изделия</span>
-					<div id="filters" class="button-group">  
-						<button class="button btn is-checked" data-filter="*">Все</button>
-						<button class="button btn" data-filter=".metal">Рольшторы</button>
-						<button class="button btn" data-filter=".transition">Рулонные шторы</button>
-						<button class="button btn" data-filter=".alkali">Горизонтальные жалюзи</button>
-						<button class="button btn" data-filter=":not(.transition)">Вертикальные жалюзи</button>
-						<button class="button btn" data-filter=".metal:not(.transition)">Плиссе</button>
-						<button class="button btn" data-filter="numberGreaterThan50">Горизонтальные жалюзи</button>
-						<button class="button btn" data-filter="ium">Пластиковые жалюзи</button>
-					</div>
+			<img src="img/production-left.png" alt="" class="production__left">
+			<img src="img/production-right.png" alt="" class="production__right">
+
+			<h2><img src="img/logo.png" alt="logo"> Фото с производства</h2>
+			<p class="production__sub-title">Мы предлагаем только продукцию высшего качества, ведь у нас работает высококвалифицированный и ответственный персоналt.</p>
+
+			<div class="production-for slider-for">
+				<div class="slider-for">
+					<a href="img/production1.jpg" data-fancybox="gallery"><img src="img/production1.jpg" alt=""></a>
 				</div>
-
-				<div class="grid">
-					<div class="element-item transition metal" data-category="transition">
-						<img src="img/filter-1.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
-					<div class="element-item metalloid" data-category="metalloid">
-						<img src="img/filter-2.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
-					<div class="element-item post-transition metal" data-category="post-transition">
-						<img src="img/filter-3.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
-					<div class="element-item post-transition metal" data-category="post-transition">
-						<img src="img/filter-4.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
-					<div class="element-item transition metal" data-category="transition">
-						<img src="img/filter-5.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
-					<div class="element-item alkali metal" data-category="alkali">
-						<img src="img/filter-6.jpg" alt="">
-						<p class="element-item__text">
-							Кассетные рольшторы - отличный выбор по соотношению цена-качество. Кассетные рольшторы - отличный выбор по соотношению цена-качество
-						</p>
-						<div class="element-item__info">
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-							<p class="element-item__info_item">
-								<b>400</b>
-								<br>вариантов
-								<br>тканей
-							</p>
-						</div>
-						<form action="sendmail.php" class="filter__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-								<button type="submit" class="btn btn--form" name="submit">Заказать</button>
-							</div>
-						</form>
-					</div>
+				<div class="slider-for">
+					<a href="img/production2.jpg" data-fancybox="gallery"><img src="img/production2.jpg" alt=""></a>
 				</div>
-
-
-			</div>
-		</section>
-
-		<section class="calculation section">
-			<div class="container">
-				
-				<h2><img src="img/logo.png" alt="logo"> Рассчитайте стоимость на сайте и <b> <br>получите скидку от 5 до 15%</b> от суммы</h2>
-
-				<p class="calculation__text">Выберите тип изделия <span></span></p>
-
-				<form action="sendmail.php" class="form" method="post">
-					<input type="hidden" name="subject" value="Форма калькулятора скидки">
-
-					<div class="services-tabs calculation__container">
-						
-						<img src="img/production-left.png" alt="" class="calculation__bg-left">
-						<img src="img/production-right.png" alt="" class="calculation__bg-right">
-
-						<div id="services-tab-1" class="services-tab">
-							<div class="calculation__content">
-								<h3>Честная скидка!</h3>
-								<p>
-									Вы поможете нам сэкономить бюджет на
-									<br>привлечение клиентов,мы сделаем вам
-									<br>за это реальную скидку от стоимости!
-								</p>
-								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
-								<span class="calculation__number">5%</span>
-							</div>
-
-							<div class="calculation__list">
-
-								<div class="calculation__item">
-									<input type="checkbox" name="one" class="answer answer-one" value="рулонные шторы" id="one">
-									<label for="one" class="calculation__item_label">
-										<span>рулонные шторы</span>
-										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="two" class="answer answer-one" value="горизонтальные жалюзи" id="two">
-									<label for="two" class="calculation__item_label">
-										<span>горизонтальные жалюзи</span>
-										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="three" class="answer answer-one" value="плиссе" id="three">
-									<label for="three" class="calculation__item_label">
-										<span>плиссе</span>
-										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="four" class="answer answer-one" value="вертикальные жалюзи" id="four">
-									<label for="four" class="calculation__item_label">
-										<span>вертикальные жалюзи</span>
-										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-							</div>
-
-							<div class="services-tabs__wrap-btn">
-								<a href="#services-tab-2" class="btn services-tabs__next services-tabs__next-one">Следующий шаг</a>
-							</div>
-						</div>
-
-						<div id="services-tab-2" class="services-tab">
-							<div class="calculation__content">
-								<h3>Честная скидка!</h3>
-								<p>
-									Вы поможете нам сэкономить бюджет на
-									<br>привлечение клиентов,мы сделаем вам
-									<br>за это реальную скидку от стоимости!
-								</p>
-								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
-								<span class="calculation__number">10%</span>
-							</div>
-
-							<div class="calculation__list">
-
-								<div class="calculation__item">
-									<input type="checkbox" name="one-2" class="answer answer-two" value="рулонные шторы" id="one-2">
-									<label for="one-2" class="calculation__item_label">
-										<span>рулонные шторы</span>
-										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="two-2" class="answer answer-two" value="горизонтальные жалюзи" id="two-2">
-									<label for="two-2" class="calculation__item_label">
-										<span>горизонтальные жалюзи</span>
-										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="three-2" class="answer answer-two" value="плиссе" id="three-2">
-									<label for="three-2" class="calculation__item_label">
-										<span>плиссе</span>
-										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="four-2" class="answer answer-two" value="вертикальные жалюзи" id="four-2">
-									<label for="four-2" class="calculation__item_label">
-										<span>вертикальные жалюзи</span>
-										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-							</div>
-
-							<div class="services-tabs__wrap-btn">
-								<a href="#services-tab-3" class="btn services-tabs__next services-tabs__next-two">Следующий шаг</a>
-							</div>
-						</div>
-
-						<div id="services-tab-3" class="services-tab">
-							<div class="calculation__content">
-								<h3>Честная скидка!</h3>
-								<p>
-									Вы поможете нам сэкономить бюджет на
-									<br>привлечение клиентов,мы сделаем вам
-									<br>за это реальную скидку от стоимости!
-								</p>
-								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
-								<span class="calculation__number">15%</span>
-							</div>
-
-							<div class="calculation__list">
-
-								<div class="calculation__item">
-									<input type="checkbox" name="one-3" class="answer answer-three" value="рулонные шторы" id="one-3">
-									<label for="one-3" class="calculation__item_label">
-										<span>рулонные шторы</span>
-										<img src="img/calculation1.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="two-3" class="answer answer-three" value="горизонтальные жалюзи" id="two-3">
-									<label for="two-3" class="calculation__item_label">
-										<span>горизонтальные жалюзи</span>
-										<img src="img/calculation2.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="three-3" class="answer answer-three" value="плиссе" id="three-3">
-									<label for="three-3" class="calculation__item_label">
-										<span>плиссе</span>
-										<img src="img/calculation3.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-
-								<div class="calculation__item">
-									<input type="checkbox" name="four-3" class="answer answer-three" value="вертикальные жалюзи" id="four-3">
-									<label for="four-3" class="calculation__item_label">
-										<span>вертикальные жалюзи</span>
-										<img src="img/calculation4.jpg" alt="" class="calculation__item_img">
-									</label>
-								</div>
-							</div>
-
-							<div class="services-tabs__wrap-btn">
-								<a href="#services-tab-4" class="btn services-tabs__next services-tabs__next-three">Следующий шаг</a>
-							</div>
-						</div>
-
-						<div id="services-tab-4" class="services-tab">
-							<div class="calculation__content">
-								<h3>Честная скидка!</h3>
-								<p>
-									Вы поможете нам сэкономить бюджет на
-									<br>привлечение клиентов,мы сделаем вам
-									<br>за это реальную скидку от стоимости!
-								</p>
-								<b class="calculation__red-text">Ваша скидка на рольшторы и <br>жалюзи составляет: </b>
-								<span class="calculation__number">15%</span>
-							</div>
-
-							<div class="calculation__form">
-
-								<h3>Что бы закрепить за собой скидку в размере 15% и получить точный расчет стоимости</h3>
-								
-								<div><input type="text" name="name" placeholder="Ваше Имя" required></div>
-
-								<div><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
-
-								<div><button type="submit" class="btn footer__form_btn" name="submit">рассчитать цену</button></div>
-
-								<p></p>
-
-							</div>
-						</div>
-
-						<ul class="tabs-list">
-							<li>
-								<a href="#services-tab-1" class="tabs__link">Шаг первый</a>
-							</li>
-							<li>
-								<a href="#services-tab-2" class="tabs__link">Шаг второй</a>
-							</li>
-							<li>
-								<a href="#services-tab-3" class="tabs__link">Шаг третий</a>
-							</li>
-							<li>
-								<a href="#services-tab-4" class="tabs__link">Получить скидку</a>
-							</li>
-						</ul>
-					</div>
-				</form>
-
-			</div>
-		</section>
-
-		<section class="quality section">
-			<div class="container">
-				
-				<h2><img src="img/logo.png" alt="logo"> Качество - наше главное преимущество!</h2>
-				<p class="quality__sub-title">Ключевые особенности нашей работы <br>или почему мы <b>даем пожизненную гарантию</b> на монтаж и <b>3 года расширенной гарантии</b> на материалы</p>
-
-				<div class="quality-for slider-for">
-					<div class="slider-for__item">
-						<img src="img/quality-slide.jpg" alt="" class="quality__img">
-						<div class="quality__content">
-							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
-							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
-							<h3>Наш выбор - качество.</h3>
-						</div>
-					</div>
-					<div class="slider-for__item">
-						<img src="img/filter-1.jpg" alt="" class="quality__img">
-						<div class="quality__content">
-							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
-							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
-							<h3>Наш выбор - качество.</h3>
-						</div>
-					</div>
-					<div class="slider-for__item">
-						<img src="img/filter-3.jpg" alt="" class="quality__img">
-						<div class="quality__content">
-							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
-							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
-							<h3>Наш выбор - качество.</h3>
-						</div>
-					</div>
-					<div class="slider-for__item">
-						<img src="img/filter-4.jpg" alt="" class="quality__img">
-						<div class="quality__content">
-							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
-							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
-							<h3>Наш выбор - качество.</h3>
-						</div>
-					</div>
-					<div class="slider-for__item">
-						<img src="img/filter-5.jpg" alt="" class="quality__img">
-						<div class="quality__content">
-							<p><b>Экологичные материалы</b> от топовых евройпейских производителей</p>
-							<p>Мы закупаем материалы только у проверенных производителей из Германии, Италии, Польши и России. Мы намеренно отказываемся от дешевых и некачественных материалов из Китая, которые заполонили белорусский рынок.</p>
-							<h3>Наш выбор - качество.</h3>
-						</div>
-					</div>
+				<div class="slider-for">
+					<a href="img/production3.jpg" data-fancybox="gallery"><img src="img/production3.jpg" alt=""></a>
 				</div>
-
-
-				<div class="quality-nav slider-nav">
-					<div>Монтажники</div>
-					<div>Интструмент</div> 
-					<div>Производство</div>
-					<div>Материалы</div>
-					<div>Комплектующие</div>
-					<div></div>
+				<div class="slider-for">
+					<a href="img/production4.jpg" data-fancybox="gallery"><img src="img/production4.jpg" alt=""></a>
 				</div>
-	
-			</div>
-		</section>
-
-		<section class="reviews section">
-			<div class="container">
-				
-				<h2><img src="img/logo.png" alt="logo"> Отзывы наших клиентов</h2>
-
-				<img src="img/reviews-bg.png" alt="" class="reviews__bg">
-				<img src="img/production-left.png" alt="" class="reviews__bg reviews__bg--left">
-
-				<div class="reviews-for slider-for">
-					<div class="slider-for__item">
-						<div class="reviews__block">
-							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
-							<div class="reviews__content">
-								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
-								<h3>Иван Иванов</h3>
-							</div>
-						</div>
-						<img src="img/reviews-slide.jpg" alt="">
-					</div>
-					<div class="slider-for__item">
-						<div class="reviews__block">
-							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
-							<div class="reviews__content">
-								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
-								<h3>Иван Иванов</h3>
-							</div>
-						</div>
-						<img src="img/reviews-slide.jpg" alt="">
-					</div>
-					<div class="slider-for__item">
-						<div class="reviews__block">
-							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
-							<div class="reviews__content">
-								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
-								<h3>Иван Иванов</h3>
-							</div>
-						</div>
-						<img src="img/quality-slide.jpg" alt="">
-					</div>
-					<div class="slider-for__item">
-						<div class="reviews__block">
-							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
-							<div class="reviews__content">
-								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
-								<h3>Иван Иванов</h3>
-							</div>
-						</div>
-						<img src="img/quality-slide.jpg" alt="">
-					</div>
-					<div class="slider-for__item">
-						<div class="reviews__block">
-							<img src="img/avatar.jpg" alt="" class="reviews__avatar">
-							<div class="reviews__content">
-								<p>Заказывал вертикальные жалюзи. Все понравилось. Спасибо замерщику и ребятам  по установке за работу. Профессионалы своего дела. Остался очень доволен результатом, качеством материалов и работ. Рекомендую!.</p>
-								<h3>Иван Иванов</h3>
-							</div>
-						</div>
-						<img src="img/reviews-slide.jpg" alt="">
-					</div>
+				<div class="slider-for">
+					<a href="img/production5.jpg" data-fancybox="gallery"><img src="img/production5.jpg" alt=""></a>
 				</div>
-
-
-				<div class="reviews-nav slider-nav">
-					<div>01</div>
-					<div>02</div>
-					<div>03</div>
-					<div>04</div>
-					<div>05</div>
-					<div></div>
-				</div>
-	
-			</div>
-		</section>
-
-		<section class="measurements section">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-5">
-						<img src="img/measurements-bg.png" alt="" class="measurements__bg">
-						<img src="img/measurements-points.png" alt="" class="measurements__points">
-					</div>
-
-					<div class="col-lg-7">
-						<h2><img src="img/logo.png" alt="logo"> Пригласите специалиста на замер</h2>
-						<div class="measurements__content">
-							<p>Оставьте заявку и наш специалист приедет к вам на объект в удобное для вас время, привезет с собой каталоги и образцы материалов и предложит заключить договор на наилучших условиях.</p>
-							<p>Стоимость вам изначально назовут по телефону и при замере она ни на рубль не изменится.</p>
-						</div>
-						<form action="sendmail.php" class="measurements__form form" method="post">
-							<input type="hidden" name="subject" value="Узнать подробнее!">
-							<div class="form__line">
-								<div><input type="tel" name="phone" placeholder="Введите Телефон" required></div>
-								<button type="submit" class="btn footer__form_btn" name="submit">Пригласить замерщика</button>
-							</div>
-						</form>
-
-					</div>
-
+				<div class="slider-for">
+					<a href="img/production6.jpg" data-fancybox="gallery"><img src="img/production6.jpg" alt=""></a>
 				</div>
 			</div>
-		</section>
-
-		<section class="production section">
-			<div class="container">
-
-				<img src="img/production-left.png" alt="" class="production__left">
-				<img src="img/production-right.png" alt="" class="production__right">
-
-				<h2><img src="img/logo.png" alt="logo"> Фото с производства</h2>
-				<p class="production__sub-title">Мы предлагаем только продукцию высшего качества, ведь у нас работает высококвалифицированный и ответственный персоналt.</p>
-
-				<div class="production-for slider-for">
-					<div class="slider-for">
-						<img src="img/production1.jpg" alt="">
-					</div>
-					<div class="slider-for">
-						<img src="img/production2.jpg" alt="">
-					</div>
-					<div class="slider-for">
-						<img src="img/production3.jpg" alt="">
-					</div>
-					<div class="slider-for">
-						<img src="img/production1.jpg" alt="">
-					</div>
-					<div class="slider-for">
-						<img src="img/production2.jpg" alt="">
-					</div>
-					<div class="slider-for">
-						<img src="img/production3.jpg" alt="">
-					</div>
-				</div>
 
 
-				<div class="production-nav slider-nav">
-					<div>01</div>
-					<div>02</div>
-					<div>03</div>
-					<div>04</div>
-					<div>05</div>
-					<div>06</div>
-				</div>
-	
+			<div class="production-nav slider-nav">
+				<div>01</div>
+				<div>02</div>
+				<div>03</div>
+				<div>04</div>
+				<div>05</div>
+				<div>06</div>
 			</div>
-		</section>
 
-		<section class="question section">
-			<div class="container">
+		</div>
+	</section>
 
-				<h2><img src="img/logo.png" alt="logo"> Остались вопросы?</h2>
-				<p class="question__sub-title">Свяжитесь с нами любым удобным способом и не забудьте упомянуть, что Вы с сайта.  За это вы <b>получите скидку от 5 до 15%</b></p>
+	<section class="question section">
+		<div class="container">
 
-				<div class="question__block">
+			<h2><img src="img/logo.png" alt="logo"> Остались вопросы?</h2>
+			<p class="question__sub-title">Свяжитесь с нами любым удобным способом и не забудьте упомянуть, что Вы с сайта.  За это вы <b>получите скидку от 5 до 15%</b></p>
 
-					<div class="question__list">
-						<div class="question__item">
-							<svg><use xlink:href="#house"></use></svg>
-							<p>г. Минск, ул. Плеханова, д.56 к.2, к. 19</p>
-						</div>
-						<div class="question__item">
-							<svg><use xlink:href="#telephone"></use></svg>
-							<a href="tel:+375293322943">+375 (29) 332 29 43</a>
-							<a href="tel:+375335222943">+375 (33) 352 29 43</a>
-							<a href="tel:+375173010667">+375 17 301-06-67</a>
-							<a href="viber://add?number=375295691865"><b>Viber</b>+375 29 569-18-65 </a>
-						</div>
-						<div class="question__item">
-							<svg><use xlink:href="#arroba"></use></svg>
-							<a href="mailto:info@jaluzi5.by">info@jaluzi5.by</a>
-							<a href="#" class="btn order_open">напишите нам</a>
-						</div>
+			<div class="question__block">
+
+				<div class="question__list">
+					<div class="question__item">
+						<svg><use xlink:href="#house"></use></svg>
+						<p>г. Минск, ул. Плеханова, д.56 к.2, к. 19</p>
 					</div>
-
-					<div class="question__map" id="map"></div>
+					<div class="question__item">
+						<svg><use xlink:href="#telephone"></use></svg>
+						<a href="tel:+375293322943">+375 (29) 332 29 43</a>
+						<a href="tel:+375335222943">+375 (33) 352 29 43</a>
+						<a href="tel:+375173010667">+375 (17) 301-06-67</a>
+						<a href="viber://add?number=375295691865"><b>Viber</b>+375 (29) 569-18-65 </a>
+					</div>
+					<div class="question__item">
+						<svg><use xlink:href="#arroba"></use></svg>
+						<a href="mailto:info@jaluzi5.by">info@jaluzi5.by</a>
+						<a href="#" class="btn order_open">напишите нам</a>
+					</div>
 				</div>
-				
-			</div>
-		</section>
 
-	</main>
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A11ddb35ae8fa0d48c7bbd11bb00ee007ba38ad606e2a6cedc8438e78426c1219&amp;width=644&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
@@ -811,8 +1138,8 @@
 
 				<div class="header__info">
 					<p>с 9:00 до 21:00 ежедневно</p>
-					<a href=" +375293322943">+375 (29) 332 29 43</a>
-					<a href="+375333522943">+375 (33) 352 29 43</a>
+					<a href="tel:+375293322943">+375 (29) 332 29 43</a>
+					<a href="tel:+375333522943">+375 (33) 352 29 43</a>
 				</div>
 			</div>
 
@@ -825,39 +1152,30 @@
 		</div>
 	</footer>
 
-	<!-- 	modal -->
-	<div class="modal" id="order">
-		<div class="wrapper">
-			<form action="sendmail.php" class="form" method="post">
+	<!-- modal -->
+		<div class="modal" id="order">
+			<div class="wrapper">
+				<form action="sendmail.php" class="form" method="post">
 
-				<button class="close order_close" type="button"></button>
+					<button class="close order_close" type="button"></button>
 
-				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
-				<input type="hidden" name="subject" value="Узнать подробнее!">
-				<div class="form__line"><input type="text" name="name" placeholder="Введите Имя" required></div>
-				<div class="form__line"><input type="tel" name="phone" required placeholder="Введите Телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
-				<div><button type="submit" class="btn form__btn" name="submit" value="отправить">Отправить</button></div>
+					<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+					<input type="hidden" name="subject" value="Оставьте заявку">
+					<div class="form__line"><input type="text" name="name" placeholder="Введите Имя" required></div>
+					<div class="form__line"><input type="tel" name="phone" required placeholder="Введите Телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+					<div><button type="submit" class="btn form__btn" name="submit" value="отправить">Отправить</button></div>
 
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
 
-	<div class="modal" id="thanks">
-		<button class="close thanks_close" type="button"></button>
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button"></button>
 
-		<h3>Спасибо <br>за доверие!</h3>
-		<p>Мы обязательно с вами свяжемся!</p>
-	</div>
-	<!-- 	modal end-->
-
-
-	<script>
-      function initMap() {
-        var uluru = {lat: 53.8641148, lng: 27.5954652};
-        var map=new google.maps.Map(document.getElementById('map'),{zoom:16,center:uluru,styles:[{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]});var marker=new google.maps.Marker({position:uluru,map:map,icon:'img/map.png'});var infowindow=new google.maps.InfoWindow({content:contentString});infowindow.open(map,marker);}
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>
+			<h3>Спасибо <br>за доверие!</h3>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
+	<!-- modal end-->
 
 	<script src="js/scripts.min.js"></script>
 </body>
